@@ -1,0 +1,51 @@
+.landing{
+ background-color: #fff;
+    font-family: inherit;
+    width: 100%;
+    min-height: 100vh;
+}
+.logo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+
+}
+.logo svg{
+    width: 100%;
+}
+svg text{
+   
+    stroke: #128c7e;
+    font-size: 7rem;
+    font-weight:700;
+    stroke-width: 1;
+    animation: text 2s linear forwards;
+    letter-spacing: -2 px;
+    outline: none;
+     
+    }
+    svg >span{
+        width: 200px;
+        height: 20px;
+        background-color: #25d366;
+    }
+@keyframes text {
+    0%{
+        stroke-dasharray: 5% 20%;
+    
+   fill: none;
+    }
+
+    50%{
+        stroke-dasharray: 30% 50%;
+
+    }
+    100%{
+        stroke-dasharray:  55% 100%;
+        fill: #075e54;
+        stroke: none;
+
+    }
+}
