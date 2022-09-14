@@ -46,7 +46,8 @@
 	font-weight: 100;
 }
 form {
-	margin-top: 0.25rem;
+	margin: 0.25rem 2rem 0 2rem;
+
 }
 .form-heading {
 	text-align: center;
@@ -62,7 +63,7 @@ form {
 
 .input-groups {
 	display: grid;
-	margin: 0rem 2rem;
+	margin: 0rem 1rem;
 }
 label {
 	font-size: 1.4rem;
@@ -76,22 +77,14 @@ label {
 .input-phone-number {
 	display: flex;
 }
-.tel-1 {
 
-}.tel-2 {
-	flex: 1;
-}.phoneInput{
-	width: 70px;
-	margin-right: 3rem;
-
-}
 input {
 	background-color: transparent;
 	border: none;
 	border-bottom: 2px solid #128c7e;
 	cursor: pointer;
-	width: 100%;
-	padding: 0.5rem 0;
+	width: 90%;
+	padding: 0.5rem;
 }
 input:focus::placeholder {
 	padding: 0.5rem 0rem;

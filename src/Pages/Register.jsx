@@ -3,25 +3,22 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { BsArrowLeft } from 'react-icons/bs';
 import '../@styles/Register.css';
-import "react-phone-number-input/style.css"
-import PhoneInput from 'react-phone-number-input';
-import PhoneInputWithCountrySelect from 'react-phone-number-input';
-import flags from 'react-phone-number-input';
+import 'react-phone-input-2/lib/style.css';
+import PhoneInput from 'react-phone-input-2';
 
 const Register = () => {
+	const [valuePhone, setValuePhone] = useState("");
+	const navigate = useNavigate();
 
-	const [value, setValue] = useState()
-  const navigate = useNavigate();
-
-  const handleHome = () =>{
-    navigate("/");
-
-  }
+	const handleHome = () => {
+		navigate('/');
+	};
 	return (
 		<div className='sign'>
 			<div className='sign-container'>
-        <div className='arrow'>
-          <BsArrowLeft color={"#128c7e"} size={20} onClick={handleHome}/></div>
+				<div className='arrow'>
+					<BsArrowLeft color={'#128c7e'} size={20} onClick={handleHome} />
+				</div>
 				<div className='sign-app'>
 					<h1>Payklas</h1>
 				</div>
@@ -39,11 +36,44 @@ const Register = () => {
 								<label>Phone</label>
 								<div className='input-phone-number'>
 									<div className='tel-1'>
-										<PhoneInputWithCountrySelect defaultCountry='' className='phoneInput' flags={flags} value={value} onChange={setValue}/>
+										<PhoneInput
+											country={'ng'}
+											value={valuePhone}
+											onChange={setValuePhone}
+											inputProp={{
+												required: true,
+												autoFocus:true,
+
+											}}
+											containerStyle={{
+												width:"100%",
+												
+											}}
+											inputStyle={{
+												border:"none",
+												borderBottom:"2px solid #128c7e",
+												borderRadius:1,
+												width:"310px",
+												margin:"1rem" ,
+												outline:"none",
+												'&:focus': {
+													border:" 2px solid #49e196",
+												}
+
+
+											}}
+											buttonStyle={{
+												outline:"none",
+												border:"2px solid #128c7e",
+												backgroundColor:"transparent",
+												borderRadius:1,
+											}}
+											
+											
+											
+										/>{' '}
 									</div>
-									<div className='tel-2'>
-									<input value={value} onChange={setValue}/>
-									</div>
+									
 								</div>
 							</div>
 							<div className='input-group'>
