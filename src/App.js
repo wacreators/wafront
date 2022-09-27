@@ -5,7 +5,7 @@ import Register from './Pages/Register';
 import Loader from "./Pages/Loader"
 import Signin from "./Pages/Signin"
 import { useState,useEffect } from 'react';
-import Profile from './Pages/Profile';
+import Verify from './@components/Verify';
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -27,7 +27,8 @@ function App() {
       <Route path="/" element={<Landing/>}></Route>
     <Route path="register" element={<Register/>}></Route>
     <Route path="signin" element={<Signin/>}></Route>
-    <Route path="profile" element={<Profile/>}></Route>
+    <Route path="verify" element={<Verify/>}></Route>
+
 
 
 
