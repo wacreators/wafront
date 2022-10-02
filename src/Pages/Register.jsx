@@ -65,8 +65,8 @@ const Register = () => {
 											buttonStyle={{
 												outline:"none",
 												border:"2px solid #128c7e",
-												backgroundColor:"transparent",
-												borderRadius:1,
+												backgroundColor:"red",
+												borderRadius: 5,
 											}}
 											
 											

@@ -1,0 +1,200 @@
+a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.group .sub-group{
+    width: 70%;
+    /* background-color: blueviolet; */
+}
+.group .sub-group .grid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px 20px;
+    border: 1px solid #BEBAB3;
+    background-color: #075e542a;
+    border-radius: 10px;
+    margin-top: 20px;
+	box-shadow: rgba(0, 0, 0, 0.838) 0px 15px 12px -20px;
+}
+.group .sub-group .grid .g-title{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #BEBAB3;
+    /* justify-content: space-around; */
+}
+.group .sub-group .grid .g-title .img-div{
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #075E54;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.group .sub-group .grid .g-title .img-div img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.group .sub-group .grid .g-title input{
+    width: 50%;
+}
+.group .sub-group .grid .g-disc{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.group .sub-group .grid .g-disc input{
+    /* height: 50px; */
+    margin-bottom: 5px;
+}
+.group .sub-group .grid .g-disc small{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 16px;
+    /* or 103% */
+
+    display: flex;
+    align-items: center;
+    /* letter-spacing: -0.5px; */
+
+    color: #78746D;
+}
+.group .sub-group form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.group .sub-group form .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    width: 400px;
+    height: 75px;
+    margin-bottom: 10px;
+    border: 1px solid #BEBAB3;
+    border-radius: 10px;
+    background-color: #075e542a;
+}
+.group .sub-group form .card .text-div h2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #4D4C4C;
+}
+.group .sub-group form .card select{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    width: 117px;
+    height: 46px;
+    border: 1px solid #BEBAB3;
+    border-radius: 10px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    color: #4D4C4C;
+}
+.group .sub-group form .card select:hover{
+    border: 1px solid #075E54;
+}
+.group .sub-group form .card input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    width: 117px;
+    height: 46px;
+    border: 1px solid #BEBAB3;
+    border-radius: 10px;
+    background-color: transparent;
+    text-align: left;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+    color: #4D4C4C;
+    background-color: #ffffff;
+}
+.group .sub-group form .card input:hover{
+    border: 1px solid #075E54;
+}
+.group .sub-group form .card .one-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10px;
+    width: 117px;
+    height: 46px;
+    border: 1px solid #BEBAB3;
+    border-radius: 10px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4D4C4C;
+    background-color: #ffffff;
+}
+.group .sub-group form .card .one-time:hover{
+    border: 1px solid #075E54;
+}
+.group .sub-group form .card .one-time input{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #BEBAB3;
+    border-radius: 3px;
+}
+.group .sub-group form .card select:focus{
+    outline: none;
+}
+.group .sub-group form input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    width: 200px;
+    border: none;
+    background: #075E54;
+    border-radius: 16px;
+    color: #ffffff;
+
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    /* or 112% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}

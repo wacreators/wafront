@@ -1,0 +1,60 @@
+.SettingOpt{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    border: 1px solid #BEBAB3;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.838) 0px 15px 20px -20px;
+}
+.SettingOpt .content{
+    display: flex;
+    align-items: center;
+}
+.SettingOpt .content .img-div{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.SettingOpt .content .img-div img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+}
+.SettingOpt .content .text-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.SettingOpt .content .text-div h2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    color: #3C3A36;
+}
+
+
+.SettingOpt .icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.SettingOpt .icon .icon-div{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.SettingOpt .icon .icon-div img{
+    position: relative;
+    width: 40%;
+    height: 40%;
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "message": "You have successfully paid for UI design...",
+        "time": "1min",
+        "content": "/message"
+    },
+    {
+        "message": "+234 1234567890 just enroled for your class...",
+        "time": "5min",
+        "content": "/message"
+    },
+    {
+        "message": "You just withdraw a sum of $50...",
+        "time": "5min",
+        "content": "/message"
+    },
+    {
+        "message": "You have successfully created Kayplas...",
+        "time": "10min",
+        "content": "/message"
+    },
+    {
+        "message": "Welcome to payklas where you can manage your...",
+        "time": "30min",
+        "content": "/message"
+    },
+    {
+        "message": "You just signin into payklas click the link...",
+        "time": "1day",
+        "content": "/message"
+    }
+]

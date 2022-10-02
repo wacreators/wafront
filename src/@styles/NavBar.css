@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    height: 80px;
+
+    background: #FFFFFF;
+    border: 1px solid #BEBAB3;
+    border-radius: 16px 16px 0px 0px;
+    transform: rotate(0.07deg);
+}
+.navbar .box{
+    width: 20%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar .box img{
+    position: relative;
+    height: 50%;
+    cursor: pointer;
+}
+.navbar .box span{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #BEBAB3;
+    transform: rotate(0.07deg);
+    cursor: pointer;
+}
+.navbar .box span:hover{
+    color: #075E54;
+}

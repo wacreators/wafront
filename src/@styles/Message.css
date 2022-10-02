@@ -1,0 +1,31 @@
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message .sub-message{
+    width: 70%;
+    /* background-color: aquamarine; */
+    text-align: center;
+    font-family:'Rubik';
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.message .sub-message .img-div{
+    background-image: url('../@assests/istockphoto-1191817260-170667a.jpg');
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 20px;
+}
+.message .sub-message h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+.message .sub-message p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+}
