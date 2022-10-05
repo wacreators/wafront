@@ -3,7 +3,7 @@
     display: grid;
     place-items: center;
     height: 100vh;
-    background-image: linear-gradient(to center,  #dcf8c6, bottom, #fff);
+    background-image: linear-gradient(to bottom,  #dcf8c6, bottom, #fff);
 
 
 }
@@ -27,7 +27,7 @@ img{
 }
 .slide{
     opacity: 0;
-    transition: all 2s ease-in;
+    transition: all .2s ease-in;
 
 }
 .current{
@@ -63,10 +63,10 @@ flex-direction: row;
 margin-top: 1rem ;
 padding:0 1rem;}
 .sm-circle-dot{
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
-    border:  1px solid #128c7e;
+    border:  1px solid#075e54;
     background-color: ghostwhite;
     color: #000;
     margin: 1rem 1.5rem;
@@ -75,17 +75,18 @@ padding:0 1rem;}
 
 .sm-circle-dot-active{
     background-color: #128c7e;
+    transform: scale(1.5);
+
 }
 
 .sm-circle-dot:hover{
-    transform: scale(1.2);
     transition: ease-in 1s linear;
 
 }
 button{
     margin-top: .5rem ;
     border-radius: 5px;
-    border: 1px solid #075e54;
+    border: 2px solid #075e54;
     cursor: pointer;
     outline: none;
     background-color: #075e54;
@@ -98,8 +99,8 @@ justify-content: center;
 
 }
 button:hover{
-    color: #dcf8c6;
-    background-color: #075e54;
+    color: #128c7e;
+    background-color: #fff;
 }
 @media screen and (max-width:380px) {
 

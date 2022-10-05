@@ -1,4 +1,4 @@
-import React ,{useState, useEffect}from 'react';
+import React ,{useState, useEffect, useRef}from 'react';
 import '../@styles/Landing.css';
 import { useNavigate } from 'react-router';
 
@@ -6,7 +6,7 @@ const Landing = () => {
   // slides 
 const [currentSlide, setCurrentSlide] = useState(0);
 const [autoPlay, setAutoPlay] = useState(true);
-let timeOut = null;
+let timer = useRef(null);
 
 
 
@@ -22,8 +22,7 @@ setCurrentSlide(0)
 }, [])
 
 useEffect(()=>{
-	timeOut = 
-	autoPlay && setTimeout(()=> {
+	timer.current = autoPlay && setTimeout(()=> {
 		nextSlide();
 	}, 2500)
 })
@@ -50,7 +49,7 @@ setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide -1)
 			<div className='pattern'
 			 onMouseEnter={()=>{
 				setAutoPlay(false);
-				clearTimeout(timeOut)
+				clearTimeout(timer)
 			}}
 			onMouseLeave={()=>{
 				setAutoPlay(true);

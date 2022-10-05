@@ -91,7 +91,7 @@ const Signin = () => {
 							</div>
 							
 
-							<div className='input-btn'>A
+							<div className='input-btn'>
 								<button className='submit' onClick={handleVerify}>Login</button>
 							</div>
 							<div className='footer'>
