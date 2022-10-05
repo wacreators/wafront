@@ -13,6 +13,7 @@ import Message from './Pages/Message';
 import Group from './Pages/Group';
 import GroupAlert from './Pages/GroupAlert';
 import Wallet from './Pages/Wallet';
+import Home from './Pages/Home';
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -42,6 +43,7 @@ function App() {
               <Route path="group" element={<Group />}></Route>
               <Route path="alert" element={<GroupAlert />}></Route>
               <Route path="wallet" element={<Wallet />}></Route>
+              <Route path="home" element={<Home />}></Route>
 
             {/* </Route> */}
           </Routes>

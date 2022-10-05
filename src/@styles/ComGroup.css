@@ -1,0 +1,51 @@
+.group{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: auto;
+    margin: 5px;
+    border: 1px solid #BEBAB3;
+    border-radius: 8px;
+}
+.group .img-div{
+    width: 100%;
+    overflow: hidden;
+}
+.group .img-div img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.group .text-div{
+    width: 100%;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.group .text-div span{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5BA092;
+}
+.group .text-div h2{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: #3C3A36;
+}
+.group .text-div p{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #3C3A36;
+
+}
