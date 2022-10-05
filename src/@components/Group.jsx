@@ -4,7 +4,7 @@ import '../@styles/ComGroup.css'
 
 function Group(props) {
   return (
-    <div className='group'>
+    <div className='groups'>
       <div className="img-div">
         <img src={img} alt="" />
       </div>
