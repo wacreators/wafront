@@ -1,40 +1,61 @@
-import React ,{useState, useEffect}from 'react';
+import React ,{useState, useEffect, useRef}from 'react';
 import '../@styles/Landing.css';
 import { useNavigate } from 'react-router';
 
 const Landing = () => {
   // slides 
-const [currentSlide, setCurrentSlide] = useState(0)
+const [currentSlide, setCurrentSlide] = useState(0);
+const [autoPlay, setAutoPlay] = useState(true);
+let timer = useRef(null);
 
 
 
 //array of images
-	const SliderData = [
-		{ image: require('../@assests/image.png'), title: "Let's help you manage your community and virtual class from anywhere"},
+	const sliderData = [
+		{ image: require('../@assests/image.png'), title: "Let's help you manage your community and virtual class"},
 		{ image: require('../@assests/image-2.png'), title: "Let's create an opportunity to get wide base of varied interest" },
-		{ image: require('../@assests/image-3.png'), title: "Let's ensure the tracking of users" },
+		{ image: require('../@assests/image-3.png'), title: "Let's ensure the adding and tracking of users" },
 	];
-  const slideLength = SliderData.length;
+  const slideLength = sliderData.length;
 useEffect(() => {
 setCurrentSlide(0)
 }, [])
 
-//
-const nextSlide = (slideIndex) =>{
-  setCurrentSlide(slideIndex)
-
+useEffect(()=>{
+	timer.current = autoPlay && setTimeout(()=> {
+		nextSlide();
+	}, 2500)
+})
+const nextSlide =()=>{
+	setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)
 }
+const prevSlide =() =>{
+setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide -1)
+}
+//
+
+
 
 // navigation to register page
 	const navigate = useNavigate();
 	const handleRegister = () => {
 		navigate('register');
 	};
+
+
+
 	return (
 		<div className='container'>
-			<div className='pattern'>
+			<div className='pattern'
+			 onMouseEnter={()=>{
+				setAutoPlay(false);
+				clearTimeout(timer)
+			}}
+			onMouseLeave={()=>{
+				setAutoPlay(true);
+			}}>
 				<div className='img-slider'>
-					{SliderData.map((slide, index) => {
+					{sliderData.map((slide, index) => {
 						return (
 							<div className={index=== currentSlide ? "slide current" : "slide"} key={index}>
                 {index === currentSlide &&  (
@@ -44,12 +65,7 @@ const nextSlide = (slideIndex) =>{
 					<p>{slide.title}</p>
 				</div>
 
-        <div className='sm-circle'>
-          {SliderData.map((slide, slideIndex) =>(
-            <div key={slideIndex} onClick={()=> nextSlide(slideIndex)}></div>)
-          )
-          }
-        </div>
+      
         </>
         )}
 							</div>
@@ -57,6 +73,14 @@ const nextSlide = (slideIndex) =>{
 					})}
 				</div>
 </div>
+<div className='sm-circle'>
+          {sliderData.map((slide, index) =>(
+            <div key={index} 
+			className={index ===currentSlide ? " sm-circle-dot-active  sm-circle-dot" : "sm-circle-dot"} 
+				onClick={()=> setCurrentSlide(index)}></div>)
+          )
+          }
+        </div>
 				<div className='btn'>
 					<button onClick={handleRegister}>Get started</button>
 				</div>
