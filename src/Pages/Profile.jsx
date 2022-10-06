@@ -11,15 +11,6 @@ import notice from '../@assests/Settings Information Icons.png'
 
 const Profile = () => {
 
-
-
-
-
-
-
-
-
-
     
 	const navigate = useNavigate();
 

@@ -146,10 +146,14 @@ input:focus {
 	place-content: center;
 }
 .footer > .forgot {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	padding: 1rem 0;
 	color: black;
 }
 .footer .link {
+
 	color: #128c7e;
+}
+a:active{
+	text-decoration: underline;
 }

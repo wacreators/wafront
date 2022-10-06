@@ -98,12 +98,12 @@ const Signin = () => {
 								<Link to="/forgotPassword"  className='forgot'>Forgot Password</Link>
 							</div>
 							<div className='footer'>
-								<p>Don't you have an account?  <Link to='/register' className='link'>
+								<p>Don't you have an account? </p>
+								 <Link to='/register' className='link'>
 										 Sign up
 									</Link>
 									.
 									
-								</p>
 							</div>
 						</div>
 					</form>

@@ -103,11 +103,11 @@ const Register = () => {
 							</div>
 
 							<div className='footer'>
-								<p>Already have an account? <Link to='/signin' className='link'>
+								<p>Already have an account?</p>
+									 <Link to='/signin' className='link'>
 										  Sign in
 									</Link>{' '}
-									now.
-								</p>
+								
 							</div>
 						</div>
 					</form>
