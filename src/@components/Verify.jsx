@@ -5,7 +5,15 @@ import VerificationInput from 'react-verification-input';
 import "../@styles/Verify.css"
 
 const Verify = () => {
-const [code, setCode]= useState()
+const [code, setCode]= useState();
+const [timer,  setTimer] = useState(50);
+useEffect(() => {
+const timing = timer > 0 && setInterval(() => setTimer(timer - 1), 1000)
+
+  return () => clearInterval(timing)
+}, [timer])
+
+
   const navigate = useNavigate()
    const handlePofile = () =>{
     navigate("/profile")
@@ -29,7 +37,7 @@ const [code, setCode]= useState()
 
         </div>
         <div className='verify-block'>
-        <p>The code expires in 10:10  <span>voice call</span></p>
+        <p>The code expires in <span>10:{timer}</span>  </p>
         <button onClick={handlePofile} className='submit'> Submit</button>
         </div>
     </div>
