@@ -13,8 +13,7 @@
 	border-radius: 2px;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
-.arrow {
-	padding: 1rem;
+.arrow-icon {
 }
 .sign-app {
 	color: #075e54;
@@ -36,7 +35,7 @@
 .sign-layout {
 	border-radius: 6px;
 	width: 400px;
-	height: 60vh;
+	height: 55vh;
 }
 .sign-layout > h3 {
 	font-family: inherit;

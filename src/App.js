@@ -15,6 +15,8 @@ import GroupAlert from './Pages/GroupAlert';
 import Wallet from './Pages/Wallet';
 import Home from './Pages/Home';
 
+import Verify from './@components/Verify';
+
 function App() {
   const [loading, setLoading] = useState(false)
 
@@ -44,8 +46,9 @@ function App() {
               <Route path="alert" element={<GroupAlert />}></Route>
               <Route path="wallet" element={<Wallet />}></Route>
               <Route path="home" element={<Home />}></Route>
+              <Route path="verify" element={<Verify/>}></Route>
 
-            {/* </Route> */}
+    
           </Routes>
         }
       </div>

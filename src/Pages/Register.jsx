@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { BsArrowLeft } from 'react-icons/bs';
 import '../@styles/Register.css';
 import 'react-phone-input-2/lib/style.css';
+
 import PhoneInput from 'react-phone-input-2';
 
 const Register = () => {
@@ -13,10 +14,15 @@ const Register = () => {
 	const handleHome = () => {
 		navigate('/');
 	};
+	const handleVerify = () =>{
+		navigate("/verify")
+		
+
+	}
 	return (
 		<div className='sign'>
 			<div className='sign-container'>
-				<div className='arrow'>
+				<div className='arrow-icon'>
 					<BsArrowLeft color={'#128c7e'} size={20} onClick={handleHome} />
 				</div>
 				<div className='sign-app'>
@@ -46,27 +52,37 @@ const Register = () => {
 
 											}}
 											containerStyle={{
-												width:"100%",
-												
+												width:"300px",
+
 											}}
 											inputStyle={{
 												border:"none",
 												borderBottom:"2px solid #128c7e",
 												borderRadius:1,
-												width:"310px",
-												margin:"1rem" ,
+												margin:"1rem 0" ,
 												outline:"none",
-												'&:focus': {
-													border:" 2px solid #49e196",
-												}
+												
 
 
 											}}
+										dropdownStyle={{
+											width:"300px",
+
+										}}
+											
 											buttonStyle={{
+												width:"300px",
 												outline:"none",
 												border:"2px solid #128c7e",
 												backgroundColor:"red",
 												borderRadius: 5,
+
+												border:"none",
+												backgroundColor:"transparent",
+												borderRadius:1,
+												borderBottom:"2px solid #128c7e",
+
+
 											}}
 											
 											
@@ -80,20 +96,15 @@ const Register = () => {
 								<label>Email</label>
 								<input type='email' />
 							</div>
-							<div className='input-group'>
-								<label>Password</label>
-								<input type='password' />
-							</div>
+						
 
 							<div className='input-btn'>
-								<button className='submit'>Login</button>
+								<button onClick={handleVerify} className='submit'>Register</button>
 							</div>
 
 							<div className='footer'>
-								<p>
-									Already have an account?
-									<Link to='/signin' className='link'>
-										Sign in
+								<p>Already have an account? <Link to='/signin' className='link'>
+										  Sign in
 									</Link>{' '}
 									now.
 								</p>
