@@ -8,8 +8,15 @@ a{
     flex-direction: column;
     align-items: center;
 }
+.group .nav-bar .search input{
+    display: none;
+}
+.group .nav-bar .search svg{
+    display: none;
+}
 .group .sub-group{
     width: 70%;
+    margin-top: 20px;
     /* background-color: blueviolet; */
 }
 .group .sub-group .grid{
@@ -19,7 +26,7 @@ a{
     background-color: transparent;
     padding: 20px 20px;
     border: 1px solid #BEBAB3;
-    background-color: #075e542a;
+    /* background-color: #075e542a; */
     border-radius: 10px;
     margin-top: 20px;
 	box-shadow: rgba(0, 0, 0, 0.838) 0px 15px 12px -20px;
@@ -92,7 +99,7 @@ a{
     margin-bottom: 10px;
     border: 1px solid #BEBAB3;
     border-radius: 10px;
-    background-color: #075e542a;
+    /* background-color: #075e542a; */
 }
 .group .sub-group form .card .text-div h2{
     font-family: 'Rubik';

@@ -1,7 +1,7 @@
 import React from 'react'
 import Alert from '../@components/Alert'
-import Nav from '../@components/Nav'
 import '../@styles/GroupAlert.css'
+import NavBar from './NavBar'
 
 function GroupAlert() {
 
@@ -13,9 +13,8 @@ function GroupAlert() {
 
   return (
     <div className='alert'>
-      <Nav 
-        heading="Successful"
-        link="/profile"
+      <NavBar 
+        title="Successsful"
       />
       <div className="sub-alert">
         <Alert 

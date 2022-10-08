@@ -1,7 +1,7 @@
 import React from 'react'
 import '../@styles/Home.css'
-import notice from '../@assests/Settings Information Icons.png'
 import Group from '../@components/Group'
+import NavBar from './NavBar';
 
 function Home() {
 
@@ -44,18 +44,10 @@ function Home() {
 
   return (
     <div className='home'>
-        <div className="nav-bar">
-            <header>
-                <div className="content">
-                    <span>Hello</span>
-                    <h1>Obanla Samuel</h1>
-                </div>
-                <img src={notice} alt="" />
-            </header>
-            <div className="search">
-                <input type="search" placeholder='Search Group' />
-            </div>
-        </div>
+        <NavBar 
+            def="Hello"
+            name="Obanla Samuel"
+        />
         <div className="sub-home">
             {card}
         </div>

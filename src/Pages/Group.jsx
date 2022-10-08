@@ -1,14 +1,12 @@
 import React from 'react'
-import Nav from '../@components/Nav'
-import img from '../@assests/Settings Information Icons (1).png'
 import '../@styles/Group.css'
+import NavBar from './NavBar'
 
 function Group() {
   return (
     <div className='group'>
-      <Nav 
-        heading="Create Group"
-        link="/profile"
+      <NavBar 
+        title="Group"
       />
       <div className="sub-group">
         <div className="grid">
