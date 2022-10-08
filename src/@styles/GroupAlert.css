@@ -11,3 +11,15 @@
     justify-content: center;
     /* background-color: rosybrown; */
 }
+.alert .nav-bar header .content svg{
+	cursor: pointer;
+}
+.alert .nav-bar .search .dd svg{
+	display: none;
+}
+.alert .nav-bar .search .dd ul{
+	display: none;
+}
+.alert .nav-bar .search input{
+	display: none;
+}
