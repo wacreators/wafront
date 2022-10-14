@@ -6,7 +6,19 @@ import { NavLink, Link, useNavigate } from 'react-router-dom';
 import Profile from './Profile'
 
 const Dashboard = () => {
-  const Greeting =
+  let timeDay;
+  const date = new Date();
+  const hours = date.getHours();
+  if (hours < 12){
+    timeDay = "morning";
+  }else if (hours >= 12 && hours < 17){
+    timeDay = "afternoon";
+  }else {
+    timeDay = "evening"
+  }
+
+
+
   return (
     <div className='dashboard'>
 ''        <div>
