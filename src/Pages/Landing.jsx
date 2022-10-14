@@ -12,9 +12,11 @@ let timer = useRef(null);
 
 //array of images
 	const sliderData = [
+		{ image: require('../@assests/image-3.png'), title: "Create weekly, monthly and one time subscriptions onypur paid WhatsApp groups" },
+		{ image: require('../@assests/image-3.png'), title: "Let's ensure the adding and tracking of users" },
 		{ image: require('../@assests/image.png'), title: "Let's help you manage your community and virtual class"},
 		{ image: require('../@assests/image-2.png'), title: "Let's create an opportunity to get wide base of varied interest" },
-		{ image: require('../@assests/image-3.png'), title: "Let's ensure the adding and tracking of users" },
+		{ image: require('../@assests/image-3.png'), title: "Let's ensure the adding and tracking of users" }
 	];
   const slideLength = sliderData.length;
 useEffect(() => {
@@ -24,7 +26,7 @@ setCurrentSlide(0)
 useEffect(()=>{
 	timer.current = autoPlay && setTimeout(()=> {
 		nextSlide();
-	}, 2500)
+	}, 4000)
 })
 const nextSlide =()=>{
 	setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)

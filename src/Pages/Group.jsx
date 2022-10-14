@@ -1,13 +1,13 @@
 import React from 'react'
 import '../@styles/Group.css'
-import NavBar from './NavBar'
+import Nav from "../@components/Nav"
 
 function Group() {
   return (
+    <>
+            			<Nav />
     <div className='group'>
-      <NavBar 
-        title="Group"
-      />
+      
       <div className="sub-group">
         <div className="grid">
             <div className="g-title">
@@ -70,6 +70,8 @@ function Group() {
         </form>
       </div>
     </div>
+    </>
+
   )
 }
 

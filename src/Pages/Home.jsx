@@ -2,6 +2,7 @@ import React from 'react'
 import '../@styles/Home.css'
 import Group from '../@components/Group'
 import NavBar from './NavBar';
+import Nav from '../@components/Nav';
 
 function Home() {
 
@@ -29,6 +30,11 @@ function Home() {
             title: "Web Design",
             describe: "Advanced mobile interface design"
     
+        },    {
+            members: 821,
+            title: "Web Design",
+            describe: "Advanced mobile interface design"
+    
         }
     ]
 
@@ -43,14 +49,16 @@ function Home() {
     })
 
   return (
+    <div className='cont'>
+        <Nav/>
+
     <div className='home'>
-        <NavBar 
-            def="Hello"
-            name="Obanla Samuel"
-        />
+
+
         <div className="sub-home">
             {card}
         </div>
+    </div>
     </div>
   )
 }

@@ -14,6 +14,7 @@
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 .arrow-icon {
+	padding: 1rem;
 }
 .sign-app {
 	color: #075e54;
@@ -35,7 +36,7 @@
 .sign-layout {
 	border-radius: 6px;
 	width: 400px;
-	height: 55vh;
+	height: 60vh;
 }
 .sign-layout > h3 {
 	font-family: inherit;
@@ -119,6 +120,13 @@ input:focus {
 	transition: all 0.5s;
 	color: #075e54;
 }
+.submit:active, 
+.login__btn:active{
+    transform: scale(0.9);
+    background-color: #128c7e;
+    color: #fff;
+    opacity: .8;
+}
 
 .login__btn {
 	margin-top: 1rem;
@@ -154,6 +162,6 @@ input:focus {
 
 	color: #128c7e;
 }
-a:active{
+.link:active{
 	text-decoration: underline;
 }

@@ -21,11 +21,11 @@ text-align: center;
 
 margin: 2rem 1rem;
 }
- input{
+ .verification input{
 	width: 40px;
 	height: 40px;
 	margin: .5rem;
-	border-bottom: 2px solid #128c7e;
+	border-bottom: 2px solid gainsboro;
 	border-radius: 1px;
 	text-align: center;
 
@@ -37,8 +37,8 @@ input:focus{
 
 h6{
 	font-size: 2rem;
-	font-weight: 700;
-	margin: .25rem 0;
+	font-weight: 600;
+	margin: .5rem 0;
 }
 p{
 	font-weight: 100;
@@ -59,3 +59,6 @@ span{
 	display: grid;
 	place-content: center;
 }
+.submit:active{
+	transform: scale(1);
+	}

@@ -1,14 +1,24 @@
-.home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.home .nav-bar .content svg{
-    display: none;
-}
-.home .sub-home{
+
+.cont{
     width: 100%;
+    min-height: 70vh;
     display: flex;
-    flex-wrap: wrap;
-    padding: 30px 30px 0 30px;
+    justify-content:center;
+ 
+}.home{
+ display: flex;
+ justify-items: center;
+ align-items: center;
+   margin-top: 2rem;
+
+
+
+
+}
+
+.sub-home{
+  display: flex;
+  flex-wrap: wrap column;
+  justify-items: center;
+  align-items: center;
 }

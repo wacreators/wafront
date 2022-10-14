@@ -1,100 +1,53 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 // import { BsArrowLeft, BsList } from 'react-icons/bs';
 import '../@styles/Register.css';
 import '../@styles/Profile.css';
-import img from '../@assests/Settings Information Icons (1).png'
 // import Notice from '../@components/Notice'
-import SettingOpt from '../@components/SettingOpt';
-import arrow from '../@assests/Next icon.png'
-import notice from '../@assests/Settings Information Icons.png'
-import NavBar from './NavBar';
+import { BsArrowLeft, BsPerson } from 'react-icons/bs';
+import img from "../@assests/ProfileIcon.png"
+import Nav from '../@components/Nav';
+
+
+
+
 
 const Profile = () => {
 
     
-	// const navigate = useNavigate();
+	const navigate = useNavigate();
 
-	// const handleHome = () => {
-	// 	navigate('/Home');
-	// };
+ const handleHome = () => {
+		navigate('/Home');
 
-
-    const content = {
-        group: {
-          title: "Create Groups"
-        },
-        wallet:{
-            title: "Your Wallet"
-        },
-        friend:{
-            title: "Invite Friends"
-        },
-        notification:{
-            title: "Notification"
-        },
-        details:{
-            title: "Your Details"
-        }
-      }
+ }
+    
+      
 	return (
 		<div className='profile-layout'>
-            <NavBar 
-                title="Profile"
-            />
+             <Nav/>
+          
 			<div className="profile-container">
-                {/* <div className='arrow'>
-                <BsArrowLeft size={30} color={"#075e54"} onClick={handleHome}/>
-                <h3>Profile</h3>
-                <BsList size={35} color={"#075e54"}/>
-                </div> */}
+            <div className='arrow-icon'>
+					<BsArrowLeft color={'#128c7e'} size={20} onClick={handleHome} />
+				</div>
                 <div className="component">
                     <div className='profile'>
-                        <h6>Profile</h6>
+                        <h3>Personal Data</h3>
                         <div className="profile-pic">
-                            <img src={img} alt="" />
+                        <BsPerson size={20}/>
                         </div>
-                        <p>Obanla samuel</p>
+                        <h3>Obanla samuel</h3>
                         <span>+234 906 792 5333</span>
                         <h5>Hello there this is all about me to the public am a software engineer and i create software for companies.</h5>
                     </div>
                     <div className="profile-component">
-                        < SettingOpt 
-                            icon={notice}
-                            title={content.details.title}
-                            arrow={arrow}
-                        />
-                        
-                        <Link to="/group">
-                            < SettingOpt 
-                                icon={notice}
-                                title={content.group.title}
-                                arrow={arrow}
-                            />
-                        </Link>
+            <div className='profile-group'>
+<div className='profile_component'>
+</div>
+</div>
+</div>
 
-                        <Link to="/wallet">
-                            < SettingOpt 
-                                icon={notice}
-                                title={content.wallet.title}
-                                arrow={arrow}
-                            />
-                        </Link>
-
-                        <Link to="/notification">
-                            < SettingOpt 
-                                icon={notice}
-                                title={content.notification.title}
-                                arrow={arrow}
-                            />
-                        </Link>
-
-                        < SettingOpt 
-                            icon={notice}
-                            title={content.friend.title}
-                            arrow={arrow}
-                        />
-                    </div>
                 </div>
             </div>
 		</div>
