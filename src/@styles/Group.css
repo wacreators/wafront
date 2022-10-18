@@ -5,8 +5,6 @@ a{
 }
 .group{
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 2fr);
     background-color: #5BA092;    align-items: center;
 }
 .group .nav-bar .search input{

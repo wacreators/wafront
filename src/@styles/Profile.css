@@ -1,6 +1,9 @@
 .profile-layout {
 	width: 100%;
 	font-family: inherit;
+	display: flex;
+	justify-content: flex-start;
+		color: black;
 	
 
 
@@ -27,16 +30,14 @@
 display: flex;
  justify-content: center; 
 align-items: center;
-flex-direction: column;
 border-radius: 6px;
 padding: 2px 0;
 }
 
-.component .profile > p{
+.component .profile p{
 	color: #128c7e;
-	font-size: 1.8rem;
+	font-size: 1rem;
 font-family: inherit;
-margin: 1rem;
 font-weight: 100;
 
 }
@@ -46,21 +47,19 @@ font-weight: 100;
 	font-size: .8rem;
 	color: gray;
 }
-.component .profile> h5{
-	font-size: 1rem;
+.component .profile h3{
+	font-size: 1.6rem;
 	margin-top: 1rem;
-	width: 375px;
-	text-align: center;
 	font-weight: 500;
 }
 .component .profile .profile-pic{
-    margin: .5rem 0;
-    border-radius: 20%;
-    width: 70px;
-    height: 70px;
+    margin: .5rem 1rem;
+    width: 100px;
+    height: 100px;
 	display: grid;
 	place-content: center;
-    border:1px solid #075e54;
+	background-color: #128c7e	;
+	border-radius: 50%;
 }
 
  .profile-component{

@@ -8,7 +8,7 @@ const Landing = () => {
         <div className='logo'>
         <svg viewBox='0 0 1350 600'>
           <text x="50%" y="50%" fill="transparent" textAnchor='middle'>
-            Payklas
+            Payklas.
             <span></span>
           </text>
 

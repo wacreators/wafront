@@ -1,0 +1,55 @@
+.dashboard{
+    display: flex;
+justify-content: flex-start;
+    color: black;
+    width: 100%;
+}
+.dashboard-container{
+width: 100%;
+background-color: ghostwhite;
+}
+.dashboard-nav{
+    display: flex;justify-content: flex-end;
+    font-size: 1.8rem;
+    margin: 1rem 2rem;
+}
+.dashboard-icon{
+    margin:0 1rem;
+    opacity: .4;
+}
+
+
+.greeting{
+    margin: .5rem 2rem; 
+}
+.greeting > h6{
+    color:#075e54;
+    font-size: 1.8rem;
+    font-weight: 100;
+
+
+}
+.greeting > p{
+    font-size: .8rem;
+    color:gray;
+    opacity: .5;
+
+}
+.overview{
+    margin: 2rem 2rem;
+
+
+    
+}
+.overview >h6{
+    font-size: 1.2rem;
+    color: gray;
+    opacity: .4;
+    font-weight: 100;
+}
+.trending{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 20px -12px;
+    height: 250px;
+    border-radius: 4px;
+}

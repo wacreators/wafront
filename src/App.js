@@ -14,11 +14,12 @@ import Group from './Pages/Group';
 import GroupAlert from './Pages/GroupAlert';
 import Wallet from './Pages/Wallet';
 import Home from './Pages/Home';
-
+import Chat from "./Pages/Chat";
 import Verify from './@components/Verify';
 import Dashboard from './Pages/Dashboard';
+import Analytics from "./Pages/Analytics";
 import { Suspense } from 'react';
-import Nav from './@components/Nav';
+import SideBar from './@components/Sidebar';
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -31,19 +32,16 @@ function App() {
   }, []);
   
   return (
+    <div className="app">
     <HashRouter>
-      <div className="app">
-      
           <Routes>
               <Route path="/" index element={<Landing/>}/>
-              
               <Route path="register" element={<Register/>}></Route>
               <Route path="/signin" element={<Signin/>}></Route>
-              </Routes>
-              <Nav>
-              <Routes>
+              <Route path="/verify" element={<Verify/>}></Route>
 
-              <Route path="/profile" element={<Profile/>}></Route>
+              <Route path="dashboard"  element={<Dashboard/>}/>
+              <Route path="profile" element={<Profile/>}></Route>
               <Route path="/setting" element={<Setting />}></Route>
               <Route path="/notification" element={<Notification />}></Route>
               <Route path="/message" element={<Message />}></Route>
@@ -51,16 +49,16 @@ function App() {
               <Route path="/alert" element={<GroupAlert />}></Route>
               <Route path="/wallet" element={<Wallet />}></Route>
               <Route path="/home" element={<Home />}></Route>
-              <Route path="verify" element={<Verify/>}></Route>
-              <Route path="/dashboard" element={<Dashboard/>}></Route>
+              <Route path="/analytics" element={<Analytics />}></Route>              <Route path="/home" element={<Home />}></Route>
+              <Route path="/chat" element={<Chat/>}></Route>
 
-    
+
+
           </Routes>
-          </Nav>
 
 
-      </div>
     </HashRouter>
+    </div>
   );
 }
 

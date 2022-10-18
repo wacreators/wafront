@@ -1,11 +1,11 @@
 import React from 'react'
 import '../@styles/Group.css'
-import Nav from "../@components/Nav"
+import Sidebar from '../@components/Sidebar'
 
 function Group() {
   return (
     <>
-            			<Nav />
+            			<Sidebar/>
     <div className='group'>
       
       <div className="sub-group">

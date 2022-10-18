@@ -2,7 +2,7 @@ import React from 'react'
 import '../@styles/Home.css'
 import Group from '../@components/Group'
 import NavBar from './NavBar';
-import Nav from '../@components/Nav';
+import Sidebar from '../@components/Sidebar';
 
 function Home() {
 
@@ -49,8 +49,10 @@ function Home() {
     })
 
   return (
+<div className='home-layout'>
+<Sidebar/>
+
     <div className='cont'>
-        <Nav/>
 
     <div className='home'>
 
@@ -58,6 +60,7 @@ function Home() {
         <div className="sub-home">
             {card}
         </div>
+    </div>
     </div>
     </div>
   )

@@ -1,8 +1,13 @@
 import React ,{useState, useEffect, useRef}from 'react';
 import '../@styles/Landing.css';
 import { useNavigate } from 'react-router';
+import Loader from "./Loader"
+
 
 const Landing = () => {
+// loader
+const [loading, setLoading] = useState(true)
+
   // slides 
 const [currentSlide, setCurrentSlide] = useState(0);
 const [autoPlay, setAutoPlay] = useState(true);
@@ -28,6 +33,8 @@ useEffect(()=>{
 		nextSlide();
 	}, 4000)
 })
+
+
 const nextSlide =()=>{
 	setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)
 }
@@ -35,6 +42,9 @@ const prevSlide =() =>{
 setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide -1)
 }
 //
+useEffect(() => {
+	setTimeout(() => setLoading(false), 3000)
+}, [])
 
 
 
@@ -47,7 +57,9 @@ setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide -1)
 
 
 	return (
-		<div className='container'>
+		 !loading ?  
+
+	(<div className='container'>
 			<div className='pattern'
 			 onMouseEnter={()=>{
 				setAutoPlay(false);
@@ -87,8 +99,10 @@ setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide -1)
 					<button onClick={handleRegister}>Get started</button>
 				</div>
 			</div>
+		 ) : (<Loader/>)
 		
 	);
 };
+
 
 export default Landing;

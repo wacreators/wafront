@@ -1,6 +1,7 @@
 import React from 'react'
 import img from '../@assests/Course Image.png'
 import '../@styles/ComGroup.css'
+import Sidebar from './Sidebar'
 
 function Group(props) {
   return (

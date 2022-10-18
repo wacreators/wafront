@@ -1,14 +1,16 @@
+.home-container{
 
+width: 100%;
+font-family: inherit;
+display: flex;
+justify-content: flex-start;
+  color: black;
+  min-height: 100vh;
+}
 .cont{
-    width: 100%;
-    min-height: 70vh;
-    display: flex;
-    justify-content:center;
- 
+    width: 20%;
 }.home{
- display: flex;
- justify-items: center;
- align-items: center;
+
    margin-top: 2rem;
 
 
@@ -17,8 +19,5 @@
 }
 
 .sub-home{
-  display: flex;
-  flex-wrap: wrap column;
-  justify-items: center;
-  align-items: center;
+
 }

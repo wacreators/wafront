@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../@components/Nav'
+import Nav from '../@components/Sidebar'
 import '../@styles/Message.css'
 // import img from '../@assests/istockphoto-1191817260-170667a.jpg'
 

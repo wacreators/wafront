@@ -1,6 +1,6 @@
 import React from 'react'
 import img from '../@assests/Settings Information Icons (1).png'
-import Nav from '../@components/Nav'
+import Nav from '../@components/Sidebar'
 import Transactions from '../@components/Transactions'
 import '../@styles/Wallet.css'
 

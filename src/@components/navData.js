@@ -1,37 +1,47 @@
 import React from 'react'
 import { BsPeople, BsPerson } from 'react-icons/bs';
-import {IoMdChatbubbles, IoMdNotificationsOutline} from "react-icons/io"
+import { FaChartBar, FaHome } from 'react-icons/fa';
+import {IoMdChatbubbles, IoMdNotificationsOutline,IoMdAnalytics } from "react-icons/io"
 import {MdOutlineAttachMoney} from "react-icons/md"
-export const navData = [
+import {GrAnalytics} from "react-icons/gr"
+export const  NavData = [
     {
-        id:0,
+        icon:<FaHome/>,
+        text:"Home",
+        to:"/dashboard"
+    }, {
         icon:<BsPerson/>,
-        text:"User",
+        text:"Profile",
         to:"/profile"
     },
     {
-        id:2,
         icon:<BsPeople/>,
         text:"Community",
-        to:"/home"
+    to:"/home"
     },
     {
-        id:3,
+
         icon:<IoMdNotificationsOutline/>,
         text:"Notification",
         to:"/notification"
     },
     {
-        id:4,
+
         icon:<MdOutlineAttachMoney/>,
-        text:"Billing",
+        text:"Payment",
         to:"/payment"
     },
     {
-        id:5,
+
+        icon:<IoMdAnalytics/>,
+        text:"Analytics",
+        to:"/analytics"
+    },
+    {
+
         icon:<IoMdChatbubbles/>,
         text:"Chat",
-        to:"/chat"
-    }
+        to: "/chat"
+    },
 ]
 

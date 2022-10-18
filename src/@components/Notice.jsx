@@ -1,6 +1,5 @@
 import React from 'react'
-import icon from '../@assests/Settings Information Icons (2).png'
-
+import {MdMessage} from "react-icons/md"
 import { Link } from 'react-router-dom'
 
 function Notice(props) {
@@ -9,7 +8,7 @@ function Notice(props) {
         <div className="content">
             {/* <Link to="Notification"> */}
                 <div className="img-div">
-                    <img src={icon} alt="" />
+                    <MdMessage/>
                 </div>
             {/* </Link> */}
             <div className="text-div">

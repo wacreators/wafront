@@ -7,7 +7,7 @@ import prof from '../@assests/Settings Information Icons (1).png'
 import mail from '../@assests/Settings Information Icons (2).png'
 import pass from '../@assests/Settings Information Icons (3).png'
 import arrow from '../@assests/Next icon.png'
-import Nav from '../@components/Nav'
+import Nav from '../@components/Sidebar'
 
 const content = {
   notification: {

@@ -30,7 +30,7 @@ const timing = timer > 0 && setInterval(() => setTimer(timer - 1), 1000)
     <h6>Enter verification code</h6>
     <p>We have sent you a verification code, kindly enter the code below.</p>
       <div className='verification'>
-     <AuthCode length={4} allowedCharacters='numeric'/>
+     <AuthCode length={4} allowedCharacters='numeric' required/>
 
         </div>
         <div className='verify-block'>
