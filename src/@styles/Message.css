@@ -1,9 +1,15 @@
 .message{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+    justify-content: space-between;
 }
 .message .sub-message{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.message .sub-message .mess{
     width: 70%;
     /* background-color: aquamarine; */
     text-align: center;
@@ -11,7 +17,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.message .sub-message .img-div{
+.message .sub-message .mess .img-div{
     background-image: url('../@assests/istockphoto-1191817260-170667a.jpg');
     width: 100%;
     height: 250px;
@@ -19,12 +25,12 @@
     background-position: top;
     margin-bottom: 20px;
 }
-.message .sub-message h1{
+.message .sub-message .mess h1{
     font-size: 2.5rem;
     font-weight: 700;
 
 }
-.message .sub-message p{
+.message .sub-message .mess p{
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;

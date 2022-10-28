@@ -6,7 +6,7 @@ justify-content: flex-start;
 }
 .dashboard-container{
 width: 100%;
-background-color: ghostwhite;
+background-color: #eeecec;
 }
 .dashboard-nav{
     display: flex;justify-content: flex-end;
@@ -24,32 +24,55 @@ background-color: ghostwhite;
 }
 .greeting > h6{
     color:#075e54;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 100;
 
 
 }
 .greeting > p{
-    font-size: .8rem;
+    font-size: 1.8rem;
     color:gray;
     opacity: .5;
 
 }
 .overview{
-    margin: 2rem 2rem;
-
-
-    
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #075e54; */
+    padding: 20px 0;
+    margin: 0 10px;
+    position: relative;
+    border-radius: 5px;
 }
-.overview >h6{
-    font-size: 1.2rem;
+.dashboard-container h5{
+    font-size: 2rem;
     color: gray;
-    opacity: .4;
+    opacity: 1.8;
     font-weight: 100;
+    margin-left: 40px;
+    margin-top: 20px;
 }
-.trending{
+#chart{
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 20px -12px;
     height: 250px;
+    width: 45%;
     border-radius: 4px;
+    font-size: 10px;
+    /* overflow-y: hidden; */
+}
+#chart2{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 20px -12px;
+    height: 250px;
+    width: 45%;
+    border-radius: 4px;
+    font-size: 10px;
+}
+.apexcharts-text tspan{
+    font-size: 15px;
+}
+svg text{
+    font-size: 1.5rem;
 }

@@ -33,12 +33,6 @@ export const  NavData = [
     },
     {
 
-        icon:<IoMdAnalytics/>,
-        text:"Analytics",
-        to:"/analytics"
-    },
-    {
-
         icon:<IoMdChatbubbles/>,
         text:"Chat",
         to: "/chat"

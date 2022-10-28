@@ -20,6 +20,7 @@ import Dashboard from './Pages/Dashboard';
 import Analytics from "./Pages/Analytics";
 import { Suspense } from 'react';
 import SideBar from './@components/Sidebar';
+import NotFound from './Pages/NotFound';
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -46,12 +47,13 @@ function App() {
               <Route path="/notification" element={<Notification />}></Route>
               <Route path="/message" element={<Message />}></Route>
               <Route path="/group" element={<Group />}></Route>
-              <Route path="/alert" element={<GroupAlert />}></Route>
+              <Route path="/alert" element={<GroupAlert />} />
               <Route path="/wallet" element={<Wallet />}></Route>
               <Route path="/home" element={<Home />}></Route>
-              <Route path="/analytics" element={<Analytics />}></Route>              <Route path="/home" element={<Home />}></Route>
+              <Route path="/analytics" element={<Analytics />}></Route>              
+              <Route path="/home" element={<Home />}></Route>
               <Route path="/chat" element={<Chat/>}></Route>
-
+              <Route path='*' element={<NotFound />} />
 
 
           </Routes>

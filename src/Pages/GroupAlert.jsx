@@ -1,7 +1,7 @@
 import React from 'react'
 import Alert from '../@components/Alert'
 import '../@styles/GroupAlert.css'
-import NavBar from './NavBar'
+import Sidebar from '../@components/Sidebar'
 
 function GroupAlert() {
 
@@ -13,9 +13,7 @@ function GroupAlert() {
 
   return (
     <div className='alert'>
-      <NavBar 
-        title="Successsful"
-      />
+      <Sidebar/>
       <div className="sub-alert">
         <Alert 
             title={content.title}
