@@ -1,11 +1,16 @@
-a{
+/* a{
     width: 100%;
     display: flex;
     justify-content: center;
+} */
+.combine{
+    display: flex;
 }
 .group{
     display: flex;
-    background-color: #5BA092;    align-items: center;
+    background-color: #eeecec;    
+    align-items: center;
+    justify-content: center;
 }
 .group .nav-bar .search input{
     display: none;
@@ -19,7 +24,7 @@ a{
     /* background-color: blueviolet; */
 }
 .group .sub-group .grid{
-  display: grid;
+    display: flex;
     background-color: transparent;
     padding: 20px 20px;
     border: 1px solid #BEBAB3;
@@ -56,11 +61,13 @@ a{
 }
 .group .sub-group .grid .g-disc{
     width: 45%;
-    height: 100%;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    margin-left: 1.5rem;
 }
 .group .sub-group .grid .g-disc input{
     /* height: 50px; */

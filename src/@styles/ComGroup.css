@@ -1,16 +1,18 @@
 .groups{
     height: auto;
-    width: 100%;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   padding: 1rem;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: .5rem;
+    cursor: pointer;
+    /* background-color: aquamarine; */
 }
 .group-container{
     border-radius: 8px;
-
-width: 250px;
-border: 1px solid #BEBAB3;
+    width: 300px;
+    border: 0px solid #ffffff;
+    overflow: hidden;
 
 }
 .groups .img-div{
@@ -28,30 +30,55 @@ border: 1px solid #BEBAB3;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background-color: #ffffff;
+}
+.groups .text-div .icon{
+    position: relative;
+    left: 65%;
+    top: -33px;
+    background-color: #5BA092;
+    padding: 2px 10px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: #ffffff;
+    height: fit-content;
+}
+.groups .text-div .icon p{
+    color: #ffffff;
+    font-size: 1.2rem;
+    position: initial;
 }
 .groups .text-div span{
-    font-family: 'Rubik';
+    /* font-family: 'Rubik'; */
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
     color: #5BA092;
+    top: -20px;
+    position: relative;
 }
 .groups .text-div h2{
-    font-family: 'Rubik';
+    /* font-family: 'Rubik'; */
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.5px;
     color: #3C3A36;
+    top: -10px;
+    position: relative;
 }
 .groups .text-div p{
-    font-family: 'Rubik';
+    /* font-family: 'Rubik'; */
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: #3C3A36;
+    top: -10px;
+    position: relative;
 
 }

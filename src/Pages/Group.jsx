@@ -1,11 +1,17 @@
 import React from 'react'
 import '../@styles/Group.css'
 import Sidebar from '../@components/Sidebar'
+import {useNavigate} from 'react-router-dom'
 
 function Group() {
+  const navigate = useNavigate();
+
+  function alert(){
+    navigate("/alert")
+  }
   return (
-    <>
-            			<Sidebar/>
+    <div className='combine'>
+    <Sidebar/>
     <div className='group'>
       
       <div className="sub-group">
@@ -22,7 +28,7 @@ function Group() {
               <small>Provide a discription about the group to enable user know more about the group.</small>
             </div>
         </div>
-        <form action="/alert">
+        <form onSubmit={alert}>
           <div className="card">
             <div className="text-div">
               <h2>Currency</h2>
@@ -70,7 +76,7 @@ function Group() {
         </form>
       </div>
     </div>
-    </>
+    </div>
 
   )
 }

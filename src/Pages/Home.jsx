@@ -3,6 +3,8 @@ import '../@styles/Home.css'
 import Group from '../@components/Group'
 import NavBar from './NavBar';
 import Sidebar from '../@components/Sidebar';
+import {MdAddCircle} from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 function Home() {
 
@@ -49,19 +51,20 @@ function Home() {
     })
 
   return (
-<div className='home-layout'>
-<Sidebar/>
-
-    <div className='cont'>
-
-    <div className='home'>
-
-
-        <div className="sub-home">
-            {card}
+    <div className='home-layout'>
+        <Sidebar/>
+        <div className='cont'>
+            <div className='home'>
+                <div className="sub-home">
+                    <div className="create">
+                        <Link to="/group">
+                            <MdAddCircle fontSize="50px" color='#ffffff' />
+                        </Link>
+                    </div>
+                    {card}
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
     </div>
   )
 }

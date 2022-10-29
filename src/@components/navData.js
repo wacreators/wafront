@@ -48,6 +48,6 @@ export const  NavData = [
         icon:<IoMdSettings/>,
         text:"Modal",
         to: "/modal"
-    },
+    }
 ]
 
