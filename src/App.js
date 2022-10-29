@@ -20,6 +20,7 @@ import Dashboard from './Pages/Dashboard';
 import Analytics from "./Pages/Analytics";
 import { Suspense } from 'react';
 import SideBar from './@components/Sidebar';
+import Modal from './@components/Modal';
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -51,6 +52,7 @@ function App() {
               <Route path="/home" element={<Home />}></Route>
               <Route path="/analytics" element={<Analytics />}></Route>              <Route path="/home" element={<Home />}></Route>
               <Route path="/chat" element={<Chat/>}></Route>
+              <Route path="/modal" element={<Modal/>}></Route>
 
 
 

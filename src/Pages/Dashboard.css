@@ -9,13 +9,22 @@ width: 100%;
 background-color: ghostwhite;
 }
 .dashboard-nav{
-    display: flex;justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
     font-size: 1.8rem;
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
 }
 .dashboard-icon{
     margin:0 1rem;
     opacity: .4;
+}
+.dashboard-nav p{
+    border-radius: 50%;
+    border: 1px solid #075e54;
+    padding: .75rem;
+    background-color: #075e54;
+    color: #fff;
+
 }
 
 

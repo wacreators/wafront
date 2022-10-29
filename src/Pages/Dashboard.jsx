@@ -1,11 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 import "./Dashboard.css"
 import {IoMdNotificationsOutline} from "react-icons/io"
 import {BsPerson} from "react-icons/bs"
 
 import Sidebar from "../@components/Sidebar"
+import Modal from '../@components/Modal'
 
 const Dashboard = () => {
+var user ="Sam Obanla"
+
+
   let timeDay;
   const date = new Date();
   const hours = date.getHours();
@@ -23,9 +27,7 @@ const Dashboard = () => {
  <Sidebar/>
  <div className='dashboard-container'>
   <div className='dashboard-nav'>
-    <IoMdNotificationsOutline className='dashboard-icon'/>
-    <BsPerson className='dashboard-icon'/>
-    <p>Sam</p>
+    <p>{user.charAt(0)}</p>
  </div>
  <div className='greeting'>
 
