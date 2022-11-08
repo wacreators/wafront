@@ -1,26 +1,38 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Modal.css"
-import { Link, useNavigate } from 'react-router-dom';
 
-import NoticeData from '../Data/NoticeData.json'
-
-import Notice from '../@components/Notice'
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import Faq from './Faq';
+import Accordion from './Accordion';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const Modal = () => {
+  const [clicked, setClicked] = useState(false);
 
+	const toggle = (index) => {
+		if (clicked === index) {
+			return setClicked(null);
+		}
+		setClicked(index);
+  }
  
   return (
    <div className='modal'>
     <div className="modal-container">
       <div className="modal-overlay">
-      <div className="background-image"></div>
-      <h5>Modern Website Design</h5>
-      <FaWhatsapp  className='modal-icon'/>
+      <div className="background-image">
+        <img src={require("../@assests/courses.png").default} alt="" />
+      </div>
+      <div className='modal-heading'>
+      <h5>Modern Website Design</h5>     
+
+      </div>
+      <p className='chat-para'> <span><FaWhatsapp size={18}/></span>Chat with Instructor</p>
+
       <div className="rating">
-        <p>30+ learners </p>      
-          <p> 10+ enrolled</p>
-          <p> 10+ enrolled</p>
+        <p>13.6k <span>Learners </span></p>      
+          <p> 47 <span> Online</span></p>
+          
 
 
       </div>
@@ -32,7 +44,9 @@ const Modal = () => {
   </p>
   </section> 
   <section className="accordion">
-    
+  {Faq.map(({title, content}) => (
+    <Accordion title={title} content={content}/>
+  ))}
   </section>
   <div className="modal-btn">
   <button>  Enrol now</button> </div>  </div>

@@ -32,15 +32,16 @@ const Profile = () => {
                         <div className="profile-pic">
                             <BsPerson size={20}/>
                         </div>
-                        <div className='det'>
+                        <div className='detail'>
                             <h3>Obanla Samuel</h3>
-                            <p>Hello there this is all about me to the public am a software engineer and i create software for companies.</p>
+                           <p>Lagos, NG</p>
                         </div>
                     </div>
                     <div className="profile-component">
                         <div className='profile-group'>
-                            <h1>DETAILS</h1>
                             <form action="">
+                                <div className='form-group'>
+                                    <div>
                                 <div className="details">
                                     <label>First Name</label>
                                     <input type="text" value="Samuel" />
@@ -49,25 +50,31 @@ const Profile = () => {
                                     <label>Last Name</label>
                                     <input type="text" value="Obanla" />
                                 </div>
+                                </div>
+                                <div>
                                 <div className="details">
-                                    <label>User Name</label>
+                                    <label>Username</label>
                                     <input type="text" value="Samcode" />
                                 </div>
                                 <div className="details">
                                     <label>Email</label>
                                     <input type="email" value="Obanlasamuelolakunle@gmail.com" />
-                                </div>
+                                </div></div>
+                                <div>
                                 <div className="details">
                                     <label>Tel</label>
                                     <input type="tel" value="+234 906 792 5333" />
                                 </div>
                                 <div className="details">
-                                    <label>Group Created</label>
-                                    <input type="text" value="6 Group Created" />
+                                    <label>Location</label>
+                                    <input type="tel" value="Nigeria" />
                                 </div>
-                                <div className="sub">
-                                    <input type="submit" value="Save Changes" />
-                                </div>
+                            </div>
+                            </div>
+                                <div>
+                                <div className="btn-profile">
+                                   <button>Submit</button>
+                                </div></div>
                             </form>
                         </div>
                     </div>

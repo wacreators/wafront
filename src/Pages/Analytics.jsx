@@ -5,7 +5,13 @@ const Analytics = () => {
   return (
     <div className='analytics'>
       <Sidebar/>
-    </div>
+<div className='chartContainer'>
+  <div>
+    
+  </div>
+
+</div>
+          </div>
   )
 }
 

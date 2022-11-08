@@ -1,11 +1,9 @@
 import React, {useState} from 'react'
-import '../@styles/Nav.css'
+import sidebarStyles from '../@styles/Nav.module.css'
 import {NavData} from "./navData.js"
 
 import { NavLink, Link, useNavigate } from 'react-router-dom';
 
-import {IoMdChatbubbles, IoMdNotificationsOutline} from "react-icons/io"
-import {MdOutlineAttachMoney} from "react-icons/md"
 import { HiOutlineMenuAlt4,HiX, HiOutlineLogout} from "react-icons/hi"
  
 function Sidebar() {
@@ -13,30 +11,33 @@ const [isOpen, setOpen] = useState(false);
 const toggle = () => setOpen(!isOpen)
 
     return (
-    <div className='sidebar-container'>
-      <div style={{width: isOpen ? "180px" :"50px"}} className="sidebar">
-        <div className="top-section">
-          <Link style={{display: isOpen ? "block" :"none"}} to="#" className="sidebar-logo">Payklas</Link>
-          <div style={{marginLeft: isOpen ? "50px" :"0", display: isOpen ? "none" :"block"}} className="menu">
-            <HiOutlineMenuAlt4 onClick={toggle}/>
+    <div className={sidebarStyles.sidebarContainer}>
+      <div style={{width: isOpen ? "200px" :"60px"}} className={sidebarStyles.sidebar}>
+        <div className={sidebarStyles.topSection}>
+          <h2 style={{display: isOpen ? "block" :"none"}}  className={sidebarStyles.sidebarLogo}>Payklas</h2>
+          <div style={{marginLeft: isOpen ? "60px" :"0", display: isOpen ? "none" :"block"}} className={sidebarStyles.menu}>
+            <HiOutlineMenuAlt4 className={sidebarStyles.icon} size={25} onClick={toggle}/>
           </div>
-          <div style={{marginLeft: isOpen ? "50px" :"0",display: isOpen ? "block" :"none" }} className="menu">
-            <HiX onClick={toggle}/>
+          <div style={{marginLeft: isOpen ? "60px" :"0",display: isOpen ? "block" :"none" }} className={sidebarStyles.menu}>
+            <HiX className={sidebarStyles.icon} size={18} onClick={toggle}/>
           </div>
-        </div>
+        </div> 
           {NavData.map((list, index)=>(
-                <div  key={index}  className="icon-link">
-                  <Link to={list.to} >
-                    <p  className="nav-icon">{list.icon}</p>
-                    <p style={{display: isOpen ? "block" :"none"}} className="link-text">{list.text}</p>
+                <div  key={index}  className={sidebarStyles.iconLink}>
+                 
+                  <Link to={list.path}>
+                  <h4  className={sidebarStyles.navIcon}>{list.icon}</h4>
+                  <h4 style={{display: isOpen ? "block" :"none"}} className={sidebarStyles.iconText}>{list.text}</h4>
                   </Link>
                 </div>
               )
             )
           }
-          <div className='logout-menu'>
-            <HiOutlineLogout/>
-            <p style={{display: isOpen ? "block" :"none"}} >Logout</p>
+          <div className={sidebarStyles.logoutMenu}>
+
+<HiOutlineLogout className={sidebarStyles.icon} size={25} />
+            <p style={{display: isOpen ? "block" :"none"}}  >Logout</p>
+       
           </div>
       </div>
     </div>

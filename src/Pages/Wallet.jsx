@@ -1,24 +1,20 @@
 import React from 'react'
-import img from '../@assests/Settings Information Icons (1).png'
-import Nav from '../@components/Sidebar'
 import Transactions from '../@components/Transactions'
 import '../@styles/Wallet.css'
+import { BsArrowLeft, BsPerson } from 'react-icons/bs';
+import Sidebar from '../@components/Sidebar';
+
 
 
 function Wallet() {
   return (
     <div className='wallet'>
-        <Nav 
-            heading="Wallet"
-            link="/profile"
-        />
+        <Sidebar/>
       <div className="sub-wallet">
         <div className="head">
-            <div className="img-div">
-                <img src={img} alt="" />
-            </div>
+         
             <div className="card">
-                <p>balance</p>
+                <p>Balance</p>
                 <h2>$350.00</h2>
                 <div className="botton-div">
                     <button>Withdraw</button>

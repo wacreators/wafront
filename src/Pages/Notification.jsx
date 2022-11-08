@@ -22,7 +22,6 @@ function Notification() {
 
   return (
     <div className='notification'>
-      <Sidebar/>
         <div className="sub-notification">
             {note}
         </div>

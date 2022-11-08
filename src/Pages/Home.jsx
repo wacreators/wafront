@@ -58,7 +58,7 @@ function Home() {
                 <div className="sub-home">
                     <div className="create">
                         <Link to="/group">
-                            <MdAddCircle fontSize="50px" color='#ffffff' />
+                            <MdAddCircle fontSize="5rem" color='#ffffff' />
                         </Link>
                     </div>
                     {card}

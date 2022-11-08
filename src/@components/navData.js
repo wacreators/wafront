@@ -3,51 +3,46 @@ import { BsPeople, BsPerson } from 'react-icons/bs';
 import { FaChartBar, FaHome } from 'react-icons/fa';
 import {IoMdChatbubbles, IoMdNotifications,IoMdAnalytics, IoMdSettings, IoIosPeople, IoIosPerson } from "react-icons/io"
 import {MdDashboard, MdAttachMoney} from "react-icons/md"
-import {GrAnalytics} from "react-icons/gr"
 export const  NavData = [
     {
         icon:<MdDashboard/>,
         text:"Home",
-        to:"/dashboard"
-    }, {
+        path:"/dashboard"
+    },
+     {
         icon:<IoIosPerson/>,
         text:"Profile",
-        to:"/profile"
+        path:"/profile"
     },
     {
         icon:<IoIosPeople/>,
         text:"Community",
-    to:"/home"
+    path:"/home"
     },
-    {
 
-        icon:<IoMdNotifications/>,
-        text:"Notification",
-        to:"/notification"
-    },
     {
 
         icon:<MdAttachMoney/>,
         text:"Payment",
-        to:"/payment"
+        path:"/wallet"
     },
     {
 
         icon:<IoMdAnalytics/>,
         text:"Analytics",
-        to:"/analytics"
+        path:"/analytics"
     },
     {
 
         icon:<IoMdSettings/>,
         text:"Setting",
-        to: "/setting"
+        path: "/setting"
     },
     {
 
         icon:<IoMdSettings/>,
         text:"Modal",
-        to: "/modal"
+        path: "/modal"
     }
 ]
 

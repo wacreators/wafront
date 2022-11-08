@@ -26,31 +26,24 @@ import NotFound from './Pages/NotFound';
 function App() {
   const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
-    setLoading(true);
-  setTimeout(() =>{
-    setLoading(false);
-  }, 4000);
-  }, []);
   
   return (
     <div className="app">
     <HashRouter>
           <Routes>
               <Route path="/" index element={<Landing/>}/>
-              <Route path="register" element={<Register/>}></Route>
+              <Route path="/register" element={<Register/>}></Route>
               <Route path="/signin" element={<Signin/>}></Route>
               <Route path="/verify" element={<Verify/>}></Route>
 
-              <Route path="dashboard"  element={<Dashboard/>}/>
-              <Route path="profile" element={<Profile/>}></Route>
-              <Route path="/setting" element={<Setting />}></Route>
+              <Route path="/dashboard" element={<Dashboard/>}/>
+              <Route  path="/profile" element={<Profile/>}></Route>
+              <Route  path="/setting" element={<Setting />}></Route>
               <Route path="/notification" element={<Notification />}></Route>
               <Route path="/message" element={<Message />}></Route>
               <Route path="/group" element={<Group />}></Route>
               <Route path="/alert" element={<GroupAlert />} />
               <Route path="/wallet" element={<Wallet />}></Route>
-              <Route path="/home" element={<Home />}></Route>
               <Route path="/analytics" element={<Analytics />}></Route>              
               <Route path="/home" element={<Home />}></Route>
               <Route path="/chat" element={<Chat/>}></Route>
