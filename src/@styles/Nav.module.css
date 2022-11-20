@@ -1,0 +1,83 @@
+.sidebarContainer{
+
+}
+.sidebar{
+    background-color: #128c7e;
+    height: 100vh;
+    transition: all .5s;
+    /* padding: 0 20px 0 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60px;
+    position: sticky;
+    top: 0px;
+}
+.topSection{
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.sidebarLogo{
+    font-size: 2.2rem;
+    color: #fff;
+}
+.menu{
+    font-size: 2rem;  
+ padding: 1rem;
+    color: #fff;
+
+
+}
+.icon{
+    color: #fff;
+
+}
+.iconLink{
+  display: grid;
+  place-items: center;
+    padding: .1rem 0rem;
+    gap: .1rem;
+
+transition: all.5s;}
+
+.navIcon, .linkText{
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+.iconLink a:hover{
+transition: all.5s;
+color: #fff;
+}
+
+.iconLink h4{
+padding-left: .5rem;
+font-size: 1.3rem;
+font-weight: 200;
+}
+.iconLink a{
+    display: flex;
+    color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 6px;
+}
+
+.logoutMenu{
+    display: flex;
+    justify-content: center;
+   font-size: 2rem;
+   margin-top: .5rem;
+}
+.logoutMenu a{
+    display: flex;
+    color: #075e54;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+}
+
+.logoutMenu a:hover{
+    transition: all.5s;
+color: #fff;
+background-color: #128c7e;
+}

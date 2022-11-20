@@ -17,11 +17,9 @@ let timer = useRef(null);
 
 //array of images
 	const sliderData = [
-		{ image: require('../@assests/image-3.png'), title: "Create weekly, monthly and one time subscriptions onypur paid WhatsApp groups" },
-		{ image: require('../@assests/image-3.png'), title: "Let's ensure the adding and tracking of users" },
-		{ image: require('../@assests/image.png'), title: "Let's help you manage your community and virtual class"},
-		{ image: require('../@assests/image-2.png'), title: "Let's create an opportunity to get wide base of varied interest" },
-		{ image: require('../@assests/image-3.png'), title: "Let's ensure the adding and tracking of users" }
+		{ image: require('../@assests/image-3.png'), message: "",title: "Adding and tracking of members" },
+		{ image: require('../@assests/image.png'), message: "Track your members",title: "Let's help you manage your community and virtual class"},
+		{ image: require('../@assests/image-2.png'), message: "",title: "Let's create an opportunity to get wide base of varied interest" },
 	];
   const slideLength = sliderData.length;
 useEffect(() => {
@@ -76,6 +74,7 @@ useEffect(() => {
                 <>
 								<img src={slide.image} alt='' />
                 <div className='landing-paragraph'>
+					<h4>{slide.message}</h4>
 					<p>{slide.title}</p>
 				</div>
 

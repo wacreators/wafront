@@ -1,14 +1,13 @@
 import React from 'react'
 import '../@styles/Setting.css'
 import Nav from '../@components/Sidebar'
+import Sidebar from '../@components/Sidebar'
 
 
 const Setting = () => {
   return (
     <div className='setting'>
-      <Nav 
-        heading="Settings"
-      />
+      <Sidebar/>
       <div className="sub-setting">
         <div className="group">
           <div className="inp">

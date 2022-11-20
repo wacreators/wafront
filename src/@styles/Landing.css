@@ -45,20 +45,19 @@ img{
     text-align: center;
 }
 .btn{
-    margin: 1rem 0;
+    margin: .5rem 0;
     display: grid;
     place-items: center;
 }
 .landing-paragraph> p{
     padding: 2rem 0;
     width:400px;
-    font-size: 1.2rem;
-}
-
-p{
-font-size: 1rem;
+    font-size: 1.4rem;
+    color:#075e54;
 
 }
+
+
 span{
     color:#075e54;
 }

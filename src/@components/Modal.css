@@ -1,0 +1,133 @@
+.modal{
+  width: 100%;
+	min-height: 100vh;
+	font-family: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal-container {
+  padding: 1rem;
+  width: 400px;
+	height: auto;
+	border-radius: 2px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.modal-overlay{
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+.background-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  background-color: gray;
+  padding: 2rem 1rem;
+}
+.modal-overlay h5{
+  font-weight: 500;
+  font-size: 1.8rem;
+  display: flex;
+  justify-self: flex-start;
+  padding: .5rem;
+}
+.modal-body{
+  padding: .5rem 2rem;
+}
+.modal-body >p{
+line-height: 1.6rem;
+  font-size: 1.2rem;
+  color: gray;
+
+}
+.modal-body h6{
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 500;
+
+}
+.rating{
+  display: flex;
+
+}
+.modal-icon{
+  font-size: 1.5rem;
+  color: #075e54;
+}
+#chat{
+  display: flex;
+
+}
+.modal-heading{
+  display: flex;
+}
+.rating h6{
+  font-size: 1.2rem;
+  padding:0 1rem;
+  color: #000;
+  font-weight: 100;
+}
+.rating p{
+  padding:0 1rem;
+  font-size: 1.4rem;
+  color: #075e54;
+
+
+}
+.rating span{
+  font-size: 1rem;
+}
+
+.modal-btn{
+  display: flex;justify-content: center;
+  align-items: center;
+}
+.modal-btn button{
+  border-radius:5px ;
+}
+.chat-para{
+  font-size: 1rem;
+  color: gray;
+
+}
+.accordion {
+  width: 100%;
+  margin-top: 1rem;
+height: auto;
+padding: 1rem;
+}
+.accordion-item{
+
+  font-size: 1.2rem;
+  color: gray;
+
+  
+}
+.accordion-title{
+  width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 1rem;
+background-color: ghostwhite;
+margin: .5rem;
+cursor: pointer;
+flex-direction: row;
+
+
+}
+.accordion-icon{
+  display: flex;
+  justify-content: flex-end;
+  margin:0 1rem;
+}
+.accordion-content{
+padding: 1rem 1.5rem;
+transition: all .2s ease-in;
+}
+.isActive{
+  transition: all .2s ease-in;
+
+}

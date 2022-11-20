@@ -1,41 +1,48 @@
 import React from 'react'
 import { BsPeople, BsPerson } from 'react-icons/bs';
 import { FaChartBar, FaHome } from 'react-icons/fa';
-import {IoMdChatbubbles, IoMdNotificationsOutline,IoMdAnalytics } from "react-icons/io"
-import {MdOutlineAttachMoney} from "react-icons/md"
-import {GrAnalytics} from "react-icons/gr"
+import {IoMdChatbubbles, IoMdNotifications,IoMdAnalytics, IoMdSettings, IoIosPeople, IoIosPerson } from "react-icons/io"
+import {MdDashboard, MdAttachMoney} from "react-icons/md"
 export const  NavData = [
     {
-        icon:<FaHome/>,
+        icon:<MdDashboard/>,
         text:"Home",
-        to:"/dashboard"
-    }, {
-        icon:<BsPerson/>,
+        path:"/dashboard"
+    },
+     {
+        icon:<IoIosPerson/>,
         text:"Profile",
-        to:"/profile"
+        path:"/profile"
     },
     {
-        icon:<BsPeople/>,
+        icon:<IoIosPeople/>,
         text:"Community",
-    to:"/home"
+    path:"/home"
     },
+
     {
 
-        icon:<IoMdNotificationsOutline/>,
-        text:"Notification",
-        to:"/notification"
-    },
-    {
-
-        icon:<MdOutlineAttachMoney/>,
+        icon:<MdAttachMoney/>,
         text:"Payment",
-        to:"/payment"
+        path:"/wallet"
     },
     {
 
-        icon:<IoMdChatbubbles/>,
-        text:"Chat",
-        to: "/chat"
+        icon:<IoMdAnalytics/>,
+        text:"Analytics",
+        path:"/analytics"
     },
+    {
+
+        icon:<IoMdSettings/>,
+        text:"Setting",
+        path: "/setting"
+    },
+    {
+
+        icon:<IoMdSettings/>,
+        text:"Modal",
+        path: "/modal"
+    }
 ]
 
