@@ -16,10 +16,15 @@
     padding-top: 30px;
     /* background-color: bisque; */
 }
+.notification .sub-notification a{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
 .notification .sub-notification .notice{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     margin-bottom: 20px;
     border: 1px solid #BEBAB3;
     border-radius: 5px;

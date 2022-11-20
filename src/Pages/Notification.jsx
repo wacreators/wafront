@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../@components/Sidebar'
+// import Nav from '../@components/Sidebar'
 import Notice from '../@components/Notice'
 import NoticeData from '../Data/NoticeData.json'
 import '../@styles/Notification.css'

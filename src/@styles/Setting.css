@@ -1,29 +1,68 @@
 .setting{
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 .setting .sub-setting{
-    width: 70%;
-    /* background-color: #3C3A36; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 50px;
+    /* background-color: blueviolet; */
+}
+.setting .sub-setting .group{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    gap: 30px;
+    background-color: transparent;
 }
-
-.setting .sub-setting h1{
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 26px;
+.setting .sub-setting .inp{
+    /* background-color: antiquewhite; */
     display: flex;
-    align-items: left;
-    letter-spacing: -0.5px;
-    color: #3C3A36;
-    width: 100%;
-    margin-left: 5%;
-    margin-bottom: 20px;
+    flex-direction: column;
+}
+.setting .sub-setting .inp input{
+    width: 350px;
+	height: 40px;
+	background-color: #e2faf0;
+	border: #e2faf0;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+.setting .sub-setting .inp textarea{
+    width: 350px;
+	height: 40px;
+    max-height: 100px;
+    min-height: 70px;
+	background-color: #e2faf0;
+	border: #e2faf0;
+	border-radius: 5px;
+	padding-left: 10px;
+    resize: vertical;
+    padding: 10px;
+}
+.setting .sub-setting .inp textarea:focus, .setting .sub-setting .inp select:focus{
+    outline: none;
+}
+.setting .sub-setting .inp select{
+    width: 350px;
+	height: 40px;
+	background-color: #e2faf0;
+	border: #e2faf0;
+	border-radius: 5px;
+	padding-left: 10px;
+    color: #90a5a3;
+}
+.setting .sub-setting .inp input[type="file"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 9px
+}
+.setting .sub-setting .inp label{
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    color: #90a5a3;
 }

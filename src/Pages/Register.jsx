@@ -9,6 +9,11 @@ import PhoneInput from 'react-phone-input-2';
 
 const Register = () => {
 	const [valuePhone, setValuePhone] = useState("");
+
+
+	const handleLogin = async (e) =>{
+		
+	}
 	const navigate = useNavigate();
 
 	const handleHome = () => {
@@ -16,8 +21,6 @@ const Register = () => {
 	};
 	const handleVerify = () =>{
 		navigate("/verify")
-		
-
 	}
 	return (
 		<div className='sign'>
@@ -30,7 +33,7 @@ const Register = () => {
 				</div>
 				<div className='sign-layout'>
 					<h3>Welcome</h3>
-					<form>
+					<form onSubmit={handleLogin}>
 						<div className='form-heading'>
 							<div className='link-title'>
 								<p className='active'>Create a new account</p>

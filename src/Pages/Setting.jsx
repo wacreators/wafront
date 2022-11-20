@@ -1,31 +1,7 @@
 import React from 'react'
 import '../@styles/Setting.css'
-import SettingOpt from '../@components/SettingOpt'
-
-import notice from '../@assests/Settings Information Icons.png'
-import prof from '../@assests/Settings Information Icons (1).png'
-import mail from '../@assests/Settings Information Icons (2).png'
-import pass from '../@assests/Settings Information Icons (3).png'
-import arrow from '../@assests/Next icon.png'
 import Nav from '../@components/Sidebar'
 
-const content = {
-  notification: {
-    title: "Notifications"
-  },
-  prof:{
-    title: "Details",
-    sub: "Juana Antonieta"
-  },
-  mail:{
-    title: "Email",
-    sub: "juanita123@gmail.com"
-  },
-  pass:{
-    title: "Password",
-    sub: "changed 2 weeks ago"
-  }
-}
 
 const Setting = () => {
   return (
@@ -34,27 +10,54 @@ const Setting = () => {
         heading="Settings"
       />
       <div className="sub-setting">
-        < SettingOpt 
-          icon={notice}
-          title={content.notification.title}
-          arrow={arrow}
-        />
-        <h1>Account Information</h1>
-        < SettingOpt 
-          icon={prof}
-          title={content.prof.title}
-          sub={content.prof.sub}
-        />
-        < SettingOpt 
-          icon={mail}
-          title={content.mail.title}
-          sub={content.mail.sub}
-        />
-        < SettingOpt 
-          icon={pass}
-          title={content.pass.title}
-          sub={content.pass.sub}
-        />
+        <div className="group">
+          <div className="inp">
+            <label>Change group subject</label>
+            <input type="text" placeholder='input group new subject' />
+          </div>
+          <div className="inp">
+            <label>Change group description </label>
+            <textarea type="text" placeholder='input group new description' ></textarea>
+          </div>
+          <div className="inp">
+            <label>Set auto remove un-active members after</label>
+            <select>
+              <option value="">default</option>
+              <option value="">2weeks</option>
+              <option value="">3weeks</option>
+              <option value="">1month</option>
+              <option value="">2month</option>
+            </select>
+          </div>
+        </div>
+        <div className="group">
+          <div className="inp">
+            <label>Set time for only admin can text</label>
+            <input type="time" placeholder='input group new title' />
+          </div>
+          <div className="inp">
+            <label>Change profile image</label>
+            <input type="file" placeholder='input group new title' />
+          </div>
+          <div className="inp">
+            <label>Change price</label>
+            <input type="number" placeholder='input group new title' />
+          </div>
+        </div>
+        <div className="group">
+          <div className="inp">
+            <label>Change group title</label>
+            <input type="text" placeholder='input group new title' />
+          </div>
+          <div className="inp">
+            <label>Change group title</label>
+            <input type="text" placeholder='input group new title' />
+          </div>
+          <div className="inp">
+            <label>Change group title</label>
+            <input type="text" placeholder='input group new title' />
+          </div>
+        </div>
       </div>
     </div>
   )

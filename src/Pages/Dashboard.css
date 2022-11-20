@@ -20,7 +20,7 @@ background-color: #eeecec;
 
 
 .greeting{
-    margin: .5rem 2rem; 
+    margin: .5rem 4rem; 
 }
 .greeting > h6{
     color:#075e54;
@@ -56,23 +56,86 @@ background-color: #eeecec;
 #chart{
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 20px -12px;
-    height: 250px;
+    height: 240px;
     width: 45%;
     border-radius: 4px;
     font-size: 10px;
-    /* overflow-y: hidden; */
+    overflow: hidden;
+    padding-top: 10px;
 }
 #chart2{
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 20px -12px;
-    height: 250px;
+    height: 255px;
     width: 45%;
     border-radius: 4px;
     font-size: 10px;
+    overflow: hidden;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
 }
-.apexcharts-text tspan{
+/* .apexcharts-text tspan{
     font-size: 15px;
 }
 svg text{
     font-size: 1.5rem;
+} */
+#chart2 h4{
+    text-anchor: start;
+    dominant-baseline: auto;
+    font-size: 14px;
+    font-weight: 900;
+    color: #373d3f;
+}
+#chart2 p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+#chart2 .link{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#chart2 .link input{
+    width: 100%;
+    height: 50px;
+    background-color: #eeecec;
+    border: none;
+    padding-left: 20px;
+    color: #999898;
+}
+#chart2 .link button{
+    height: 50px;
+    width: 60px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+#chart2 .but{
+    display: flex;
+    gap: 10px;
+}
+#chart2 .but .student{
+    display: flex;
+    background-color: #9df1ce;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 25px;
+    gap: 5px;
+    cursor: pointer;
+}
+#chart2 .but .student p{
+    font-size: 15px;
+    color: #373d3fcc;
+    font-weight: 700;
 }
