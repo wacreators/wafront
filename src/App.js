@@ -1,10 +1,10 @@
 import './App.css';
-import {Routes, Route, BrowserRouter,HashRouter} from "react-router-dom"
+import {Routes, Route, HashRouter} from "react-router-dom"
 import Landing from './Pages/Landing';
 import Register from './Pages/Register';
-import Loader from "./Pages/Loader"
+// import Loader from "./Pages/Loader"
 import Signin from "./Pages/Signin"
-import { useState,useEffect } from 'react';
+// import { useState } from 'react';
 import Profile from './Pages/Profile';
 // import Layout from './Layout';
 import Setting from './Pages/Setting';
@@ -18,13 +18,13 @@ import Chat from "./Pages/Chat";
 import Verify from './@components/Verify';
 import Dashboard from './Pages/Dashboard';
 import Analytics from "./Pages/Analytics";
-import { Suspense } from 'react';
-import SideBar from './@components/Sidebar';
+// import { Suspense } from 'react';
+// import SideBar from './@components/Sidebar';
 import Modal from './@components/Modal';
 import NotFound from './Pages/NotFound';
 
 function App() {
-  const [loading, setLoading] = useState(false)
+  // const [loading, setLoading] = useState(false)
 
   
   return (

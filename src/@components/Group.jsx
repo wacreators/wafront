@@ -1,7 +1,7 @@
 import React from 'react'
 import img from '../@assests/Course Image.png'
 import '../@styles/ComGroup.css'
-import Sidebar from './Sidebar'
+// import Sidebar from './Sidebar'
 import {BsWhatsapp} from "react-icons/bs"
 
 function Group(props) {

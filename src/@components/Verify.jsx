@@ -1,12 +1,12 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import AuthCode from 'react-auth-code-input';
-import { Link, useNavigate } from 'react-router-dom';
-import VerificationInput from 'react-verification-input';
+import {  useNavigate } from 'react-router-dom';
+// import VerificationInput from 'react-verification-input';
 import "../@styles/Verify.css"
 
 const Verify = () => {
-const [code, setCode]= useState();
+// const [code, setCode]= useState();
 const [timer,  setTimer] = useState(60);
 useEffect(() => {
 const timing = timer > 0 && setInterval(() => setTimer(timer - 1), 1000)

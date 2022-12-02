@@ -1,7 +1,7 @@
 import React from 'react'
 import '../@styles/Home.css'
 import Group from '../@components/Group'
-import NavBar from './NavBar';
+// import NavBar from './NavBar';
 import Sidebar from '../@components/Sidebar';
 import {MdAddCircle} from 'react-icons/md'
 import { Link } from 'react-router-dom'

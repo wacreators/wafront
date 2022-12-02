@@ -3,8 +3,8 @@ import React from 'react'
 import Notice from '../@components/Notice'
 import NoticeData from '../Data/NoticeData.json'
 import '../@styles/Notification.css'
-import { Link, useNavigate } from 'react-router-dom';
-import Sidebar from '../@components/Sidebar'
+import { Link } from 'react-router-dom';
+// import Sidebar from '../@components/Sidebar'
 
 function Notification() {
 

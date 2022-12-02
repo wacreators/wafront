@@ -1,21 +1,21 @@
-import React,{useState} from 'react'
+import React from 'react'
 import "./Modal.css"
 
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+// import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import Faq from './Faq';
 import Accordion from './Accordion';
-import { FaWhatsapp } from 'react-icons/fa';
+// import { FaWhatsapp } from 'react-icons/fa';
 import prof from '../@assests/istockphoto-1191817260-170667a.jpg'
 
 const Modal = () => {
-  const [clicked, setClicked] = useState(false);
+  // const [clicked, setClicked] = useState(false);
 
-	const toggle = (index) => {
-		if (clicked === index) {
-			return setClicked(null);
-		}
-		setClicked(index);
-  }
+	// const toggle = (index) => {
+	// 	if (clicked === index) {
+	// 		return setClicked(null);
+	// 	}
+	// 	setClicked(index);
+  // }
  
   return (
    <div className='modal'>

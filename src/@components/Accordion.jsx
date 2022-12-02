@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { MdTitle } from 'react-icons/md'
+// import { MdTitle } from 'react-icons/md'
 import "./Modal.css"
 
 const Accordion = ({title,content}) => {

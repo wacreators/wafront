@@ -1,6 +1,6 @@
 import React from 'react'
 import '../@styles/Setting.css'
-import Nav from '../@components/Sidebar'
+// import Nav from '../@components/Sidebar'
 import Sidebar from '../@components/Sidebar'
 
 

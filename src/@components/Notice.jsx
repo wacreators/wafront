@@ -1,6 +1,6 @@
 import React from 'react'
 import {MdMessage} from "react-icons/md"
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 function Notice(props) {
   return (

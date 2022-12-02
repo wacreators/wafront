@@ -36,9 +36,9 @@ useEffect(()=>{
 const nextSlide =()=>{
 	setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1)
 }
-const prevSlide =() =>{
-setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide -1)
-}
+// const prevSlide =() =>{
+// setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide -1)
+// }
 //
 useEffect(() => {
 	setTimeout(() => setLoading(false), 3000)
