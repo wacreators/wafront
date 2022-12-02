@@ -87,16 +87,13 @@
 .greeting > h3{
     color:#075e54;
     font-size: 2.8rem;
-    font-weight: 100;
-
-
+    font-weight: 400;
 }
 .greeting > p{
     padding:0 0.5rem;
     font-size: 1.5rem;
-    color:gray;
-    opacity: .5;
-
+    color:rgb(78, 78, 78);
+    font-weight: 400;
 }
 .overview{
     width: 100%;
@@ -153,7 +150,7 @@ color: #fff;
     max-width: 100%;
     margin: 1rem 0;
     padding: 1rem 0;
-    font-size: 10px;
+    font-size: 15px;
 }
 .apexcharts-text tspan{
     font-size: 1.6rem;
@@ -321,7 +318,7 @@ svg text{
         font-size: 1rem;
     }
     svg text{
-        font-size: 5px;
+        font-size: 10px;
     }
     .dashboard .sidebarContainer{
         display: none;

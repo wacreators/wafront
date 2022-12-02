@@ -7,7 +7,8 @@ import Chart from "react-apexcharts"
 import {HiOutlineUsers} from "react-icons/hi";
 import {BiGroup} from "react-icons/bi"
 import {AiOutlineEye} from "react-icons/ai"
-import { RiWhatsappFill } from 'react-icons/ri'
+// import { RiWhatsappFill } from 'react-icons/ri'
+import { IoMdSettings } from "react-icons/io"
 import { MdAttachMoney, MdContentCopy, MdShare, MdCircleNotifications, MdDelete } from 'react-icons/md'
 
 
@@ -219,10 +220,10 @@ right:0
                 <div className={dashboardStyles.Cont2} style={{display: change2 ? "block" :"none"}} >
                   <h6>Groups</h6>
                   <div className={dashboardStyles.user}>
-                    <p>Figma class <span><RiWhatsappFill fontSize={23} /></span> </p>
-                    <p>Javacript class <span><RiWhatsappFill fontSize={23} /></span> </p>
-                    <p>React class <span><RiWhatsappFill fontSize={23} /></span> </p>
-                    <p>Product design class <span><RiWhatsappFill fontSize={23} /></span> </p>
+                    <p>Figma class <span><IoMdSettings fontSize={23} /></span> </p>
+                    <p>Javacript class <span><IoMdSettings fontSize={23} /></span> </p>
+                    <p>React class <span><IoMdSettings fontSize={23} /></span> </p>
+                    <p>Product design class <span><IoMdSettings fontSize={23} /></span> </p>
                   </div>
                 </div>
                 <div className={dashboardStyles.Cont} style={{display: change ? "block" :"none"}}  >

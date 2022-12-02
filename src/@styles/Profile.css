@@ -40,6 +40,7 @@
 	/* background-color: aquamarine; */
 	width: fit-content;
 	padding: 10px 20px;
+	flex-wrap: wrap;
 }
 .component .profile .detail h2{
 	font-size: 2.4rem;
@@ -127,7 +128,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 20px;
 }
 .form-group .group .details input{
 	max-width: 350px;
@@ -153,4 +153,17 @@
 	display: flex;
 	justify-content: flex-start;
 align-items: center;
+}
+
+
+@media screen and (max-width: 794px) {
+	.profile-group form .details{
+		margin: 5px 0;
+	}
+	.component .profile .detail{
+		margin-top: 20px;
+	}
+	.component .profile .detail p{
+		width: 90%;
+	}
 }
