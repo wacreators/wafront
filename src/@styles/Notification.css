@@ -15,21 +15,14 @@
     /* background-color: bisque; */
 }
 .notification .sub-notification a{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 .notification .sub-notification .notice{
     display: flex;
-<<<<<<< HEAD
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 20px;
-    border: 1px solid #BEBAB3;
-=======
     width: 100%;
     margin-bottom: 1rem;
->>>>>>> 01ae825f22af03157565baa86f38bc33b61aa3c2
     border-radius: 5px;
     cursor: pointer;
 }

@@ -5,14 +5,14 @@ import "./Modal.css"
 
 const Accordion = ({title,content}) => {
 
-    const [isActive, setActive] = useState(false)
+  const [isActive, setActive] = useState(false)
   return (
     <div className='accordion-item'>
-<div className="accordion-title" onClick={()=> setActive(!isActive)}>
-<div>{title}</div>
-<div className='accordion-icon'>{isActive ? "-" : "+"}</div>
-</div>
-{isActive && <div className='accordion-content'>{content}</div>}
+      <div className="accordion-title" onClick={()=> setActive(!isActive)}>
+        <h4>{title}</h4>
+        <h4 className='accordion-icon'>{isActive ? "-" : "+"}</h4>
+      </div>
+      {isActive && <div className='accordion-content'>{content}</div>}
     </div>
   )
 }

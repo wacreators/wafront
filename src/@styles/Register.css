@@ -1,17 +1,22 @@
 .sign {
 	width: 100%;
-	min-height: 100vh;
+	height: 100vh;
 	font-family: inherit;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #ececec;
 }
 
 .sign-container {
 	display: flex;
 	flex-direction: column;
 	border-radius: 2px;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+	background-color: #fff;
+	width: 400px;
+	max-width: 90%;
+	height: fit-content;
+	/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 }
 .arrow-icon {
 	padding: 1rem;
@@ -19,7 +24,7 @@
 .sign-app {
 	color: #075e54;
 	width: 100%;
-	height: 100px;
+	margin-bottom: 10px;
 	display: grid;
 	place-items: center;
 }
@@ -35,7 +40,7 @@
 
 .sign-layout {
 	border-radius: 6px;
-	width: 400px;
+	width: 100%;
 	height: 60vh;
 }
 .sign-layout > h3 {
@@ -55,6 +60,9 @@ form {
 .link-title {
 	padding: 0.5rem 1rem;
 }
+.link-title p{
+	font-size: 15px;
+}
 .active {
 	font-size: 2rem;
 	color: #128c7e;
@@ -62,38 +70,50 @@ form {
 }
 
 .input-groups {
-	display: grid;
-	margin: 0rem 1rem;
-}
-label {
-	font-size: 1.4rem;
-	margin: 0.5rem 0;
-}
-.input-group {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+}
+.input-group label {
+	font-size: 1.4rem;
+	width: 90%;
+	text-align: left;
+	margin-bottom: 10px;
+}
+.input-group {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin-top: 2rem;
 }
 .input-phone-number {
 	display: flex;
+	justify-content: center;
+	width: 100%;
 }
-
+.input-phone-number .tel-1{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 input {
 	background-color: transparent;
 	border: none;
 	border-bottom: 2px solid #128c7e;
 	cursor: pointer;
 	width: 90%;
-	padding: 0.5rem;
+	padding: 10px 10px;
 }
-input:focus::placeholder {
+/* input:focus::placeholder {
 	padding: 0.5rem 0rem;
 	transition: opacity 0.5s 0.5s ease;
 	opacity: 0;
-}
+} */
 input:focus {
 	outline: none;
-	border-color: #49e196;
+	border: none;
+	border-bottom: 2px solid #128c7e;
 }
 .input-btn {
 	display: grid;

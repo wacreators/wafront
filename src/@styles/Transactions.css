@@ -1,6 +1,6 @@
 .transactions{
     /* background-color: rgb(209, 219, 228); */
-    width: 50%;
+    width: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -9,12 +9,15 @@
     margin-bottom: 2rem;
     border-radius: 5px;
     background-color: ghostwhite;
+    border: 1.5px solid transparent;
 }
 .transactions:hover{
     cursor: pointer;
     transition: all ease-in .2s;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px 0px;
-transform: scale(1.05);}
+    border: 1.5px solid #0cdac2;
+	/* box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px 0px; */
+    /* transform: scale(1.01); */
+}
 .transactions .img-div{
   
 }

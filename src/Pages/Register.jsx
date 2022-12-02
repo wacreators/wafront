@@ -5,14 +5,29 @@ import { BsArrowLeft } from 'react-icons/bs';
 import '../@styles/Register.css';
 import 'react-phone-input-2/lib/style.css';
 
-import PhoneInput from 'react-phone-input-2';
+// import PhoneInput from 'react-phone-input-2';
 
 const Register = () => {
-	const [valuePhone, setValuePhone] = useState("");
+	const [phone, setValuePhone] = useState("");
+	const [password, setValuePassword] = useState("");
 
 
 	const handleLogin = async (e) =>{
-		
+		e.preventDefault();
+		let result = await fetch("http://139.162.181.111/api/v1/account/register/",
+		{
+			method: "post",
+			credencials: "include",
+			body: JSON.stringify({ password, phone }),
+			headers: {
+				
+			"content-Type": "application/json",
+			}
+		}
+		);
+		result = await result.json();
+		console.warn(result);
+		console.log(result);
 	}
 	const navigate = useNavigate();
 
@@ -20,7 +35,7 @@ const Register = () => {
 		navigate('/');
 	};
 	const handleVerify = () =>{
-		navigate("/verify")
+		// navigate("/verify")
 	}
 	return (
 		<div className='sign'>
@@ -29,10 +44,10 @@ const Register = () => {
 					<BsArrowLeft color={'#128c7e'} size={20} onClick={handleHome} />
 				</div>
 				<div className='sign-app'>
-					<h1>Payklas</h1>
+					<h1>Welcome</h1>
 				</div>
 				<div className='sign-layout'>
-					<h3>Welcome</h3>
+					{/* <h3>Welcome</h3> */}
 					<form onSubmit={handleLogin}>
 						<div className='form-heading'>
 							<div className='link-title'>
@@ -45,57 +60,19 @@ const Register = () => {
 								<label>Phone</label>
 								<div className='input-phone-number'>
 									<div className='tel-1'>
-										<PhoneInput
-											country={'ng'}
-											value={valuePhone}
-											onChange={setValuePhone}
-											inputProp={{
-												required: true,
-												autoFocus:true,
-
-											}}
-											containerStyle={{
-												width:"300px",
-
-											}}
-											inputStyle={{
-												border:"none",
-												borderBottom:"2px solid #128c7e",
-												borderRadius:1,
-												margin:"1rem 0" ,
-												outline:"none",
-												
-
-
-											}}
-										dropdownStyle={{
-											width:"300px",
-
-										}}
-											
-											buttonStyle={{
-												width:"300px",
-												outline:"none",
-												border:"none",
-
-
-												backgroundColor:"transparent",
-												borderRadius:1,
-												borderBottom:"2px solid #128c7e",
-
-
-											}}
-											
-											
-											
-										/>{' '}
+										<input
+											onChange={(e) => setValuePhone(e.target.value)}
+										/>
 									</div>
 									
 								</div>
 							</div>
 							<div className='input-group'>
-								<label>Email</label>
-								<input type='email' />
+								<label>Password</label>
+								<input type='password'
+									value={password}
+									onChange={(e) => setValuePassword(e.target.value)}
+									 />
 							</div>
 						
 

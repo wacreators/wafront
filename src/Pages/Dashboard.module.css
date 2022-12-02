@@ -2,24 +2,27 @@
 	width: 100%;
 	min-height: 100vh;
     display: flex;
-	
-	
-
+}
+.dashboard .sidebarContainer .sidebar{
+    display: none;
 }
 .dashboardWrapper{
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
 }
 .dashboardView{
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    height: fit-content;
 }
 .dashboardNav{
     display: flex;
     justify-content: flex-end;
-
-    margin: .5rem .5rem;
+    /* background-color: chartreuse; */
 }
 .dashboardIcon{
     margin:0 1rem;
@@ -27,27 +30,59 @@
 }
 .dashboardNav >p{
     border-radius: 50%;
+    width: 30px;
+    height: 30px;
     border: 1px solid #128c7e;
-    padding: .75rem;
     background-color: #075e54;
     color: #fff;
+    margin: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
 
 }
+.dashboardNav >p span{
+    display: none;
+}
+.dashboardNav >p:is(:active, :hover){
+    width: fit-content;
+    border-radius: 10px;
+    padding: 0 10px;
+    color: #075e54;
+}
+.dashboardNav >p:is(:active, :hover) .name{
+    display: block;
+    color: #fff;
+}
 .Container{
-    width: 100%;
+    width: 45%;
+    /* background-color: darkolivegreen; */
 }
 .linkCont{
     margin: 1rem 0;
-    padding: 1rem;
-    width: 800px;
-    height: 375px;  
-    }
-
-.linkCont h5{
+    padding: 1rem 1rem 1rem 1.3rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua;  */
 }
+.linkCont svg{
+    color: #0cdac2;
+}
+/* 
+.linkCont h5{
+} */
 
 .greeting{
-    margin: .5rem 2rem; 
+    width: 100%;
+    padding: 5px 20px;
+    /* background-color: blueviolet; */
 }
 .greeting > h3{
     color:#075e54;
@@ -58,7 +93,7 @@
 }
 .greeting > p{
     padding:0 0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color:gray;
     opacity: .5;
 
@@ -66,37 +101,43 @@
 .overview{
     width: 100%;
     display: flex;
-    /* background-color: #075e54; */
-    padding: 2rem 0;
+    justify-content: space-between;
+    padding: 10px 20px;
     position: relative;
-    border-radius: 5px;
 }
 
-
+.dash{
+    width: 50%;
+    /* background-color: crimson; */
+}
 
 .overviewer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: auto;
-    margin: 1rem;
+    margin: 1rem 0;
+    /* background-color: darkgreen; */
 }
 .view{
     
     display: flex;
+    flex-direction: row;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    width: 180px;
+    width: 150px;
     height: 75px;
-    margin:0 1rem;
-    border-radius: 2px;
-padding: .5rem;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px 0px;}
- .view:hover{
+    border-radius: 5px;
+    padding: .5rem;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
+    cursor: pointer;
+}
+ /* .view:hover{
 background-color: #128c7e;
 color: #fff;
 
-    }
+    } */
 .view h5{
     font-weight: 400;
     font-size: 1.8rem;
@@ -109,29 +150,186 @@ color: #fff;
 .icon{
 }
 .chart{
-    max-width: 1000px;
-    margin: .5rem .5rem 0 ;
-    padding: 1rem;
+    max-width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 0;
     font-size: 10px;
 }
 .apexcharts-text tspan{
     font-size: 1.6rem;
 }
 svg text{
-    font-size:1.8rem;
+    font-size: 13px;
+}
+.notification{
+    width: 100%;
 }
 .Cont{
     margin: 0.5rem 0;
+    margin-top: 20px;
     padding: 1rem;
-width: 100%;
-    height: 250px;  
+    width: 100%;
+    height: fit-content;
+    border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
 }
-.Cont p{
+.Cont .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Cont .list span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Cont .list span h4{
+    width: 15px;
+    height: 15px;
+    background-color: #0cdac2;
+    border-radius: 50%;
+}
+.Cont .list p{
     font-size: 1.6rem;
-    margin: 1rem;
-    padding: 1rem;
+    padding: 10px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #000;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.Cont .list p span svg{
+    color: #fc8f8f;
+}
+.Cont .list p span svg:hover{
+    color: rgb(209, 9, 9);
+}
+.Cont .list p:hover{
+    border: 1.5px solid #0cdac2;
+}
+.Cont2 .user{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Cont2 .user p{
+    font-size: 1.6rem;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.Cont2{
+    margin: 0.5rem 0;
+    margin-top: 20px;
+    padding: 1rem;
+    width: 100%;
+    height: fit-content;
+    border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
+}
+.Cont2 .user p:hover{
+    border: 1.5px solid #0cdac2;
+}
+.copy{
+    height: 50px;
+    width: 100%;
+    border: 1.5px solid #0cdac2;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.copy input{
+    border: none;
+    height: 100%;
+    margin-top: 0;
+    color: #0cdac2;
+}
+.copy button{
+    width: fit-content;
+    margin: 5px 5px 5px;
+    padding: 5px ;
+    background-color: transparent;
+    border: 1.5px solid #0cdac2;
+    color: #0cdac2;
+    margin-top: none;
+}
+.copy button:last-child{
+    margin-right: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1348px) {
+    .view h5{
+        font-weight: 400;
+        font-size: 1.5rem;
+        padding: .5rem 0;
+    }
+    .view h6{
+        font-weight: 100;
+        font-size: 1.2rem;
+    }
+    .view{
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 1172px) {
+    .dashboard .sidebarContainer{
+       /* flex-direction: column; */
+       position: fixed;
+       left: 10px;
+    }
+    .overview{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dash{
+        width: 100%;
+    }
+    .Container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        /* background-color: darkolivegreen; */
+    }
+    .view{
+        width: 150px;
+        flex-grow: 2;
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .overviewer{
+        flex-wrap: wrap;
+    }
+    .overview{
+        padding: 10px 5px;
+    }
+    .apexcharts-text tspan{
+        font-size: 1rem;
+    }
+    svg text{
+        font-size: 5px;
+    }
+    .dashboard .sidebarContainer{
+        display: none;
+    }
+    .chart{
+        max-width: 100%;
+        margin: 1rem 10px;
+        padding: 1rem 0;
+        font-size: 10px;
+    }
 }

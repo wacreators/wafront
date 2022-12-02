@@ -1,38 +1,45 @@
 .setting{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .setting .sub-setting{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 50px;
+    flex-wrap: wrap;
     /* background-color: blueviolet; */
 }
 .setting .sub-setting .group{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
 }
-.setting .sub-setting .inp{
+.setting .sub-setting .group .inp{
     /* background-color: antiquewhite; */
     display: flex;
     flex-direction: column;
-}
-.setting .sub-setting .inp input{
+    align-items: center;
+    margin: 10px 0;
+    min-width: 100%;
     width: 350px;
+}
+.setting .sub-setting .group .inp input{
 	height: 40px;
 	background-color: #e2faf0;
 	border: #e2faf0;
 	border-radius: 5px;
 	padding-left: 10px;
 }
-.setting .sub-setting .inp textarea{
-    width: 350px;
+.setting .sub-setting .group .inp textarea{
+    /* width: 350px; */
+    width: 90%;
 	height: 40px;
     max-height: 100px;
     min-height: 70px;
@@ -43,11 +50,12 @@
     resize: vertical;
     padding: 10px;
 }
-.setting .sub-setting .inp textarea:focus, .setting .sub-setting .inp select:focus{
+.setting .sub-setting .group .inp textarea:focus, .setting .sub-setting .inp select:focus{
     outline: none;
 }
-.setting .sub-setting .inp select{
-    width: 350px;
+.setting .sub-setting .group .inp select{
+    /* width: 350px; */
+    width: 90%;
 	height: 40px;
 	background-color: #e2faf0;
 	border: #e2faf0;
@@ -55,14 +63,15 @@
 	padding-left: 10px;
     color: #90a5a3;
 }
-.setting .sub-setting .inp input[type="file"]{
+.setting .sub-setting .group .inp input[type="file"]{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 9px 9px
 }
-.setting .sub-setting .inp label{
+.setting .sub-setting .group .inp label{
     font-size: 1.4rem;
     margin: 0.5rem 0;
     color: #90a5a3;
+    width: 90%;
 }

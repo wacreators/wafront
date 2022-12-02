@@ -9,17 +9,18 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
     margin-top: 5rem;
-    /* background-color: burlywood; */
 }
 .wallet .sub-wallet .head{
     display: flex;
-justify-content: center;    align-items: center;
-    width: 65%;
-    padding: 15px 15px;
+    justify-content: center;    align-items: center;
+    width: 100%;
+    padding: 0px 15px;
     border-radius: 20px;
+    margin-bottom: 20px;
+    /* background-color: burlywood; */
 }
 
 .wallet .sub-wallet .head .img-div img{
@@ -28,66 +29,79 @@ justify-content: center;    align-items: center;
     height: 100%;
 }
 .wallet .sub-wallet .head .card{
-    width: 300px;
-    height: 150px;
+    width: 100%;
     padding: 20px 20px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 16px;
+    border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
+    /* background-color: aqua; */
 }
 .wallet .sub-wallet .head .card p{
     font-weight: 400;
     font-size: 1.8rem;
-    line-height: 42px;
     display: flex;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     letter-spacing: 2px;
     mix-blend-mode: normal;
     color: #000000;
+    width: 100%;
 
 }
 .wallet .sub-wallet .head .card h2{
     font-weight: 700;
     font-size: 2.8rem;
-    line-height: 42px;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1px;
     color: #000000;
+    width: 100%;
 }
 .wallet .sub-wallet .head .card .botton-div{
     display: flex;
     width: 100%;
     position: relative;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
 }
 .wallet .sub-wallet .trans{
-    width: 80%;
+    width: 90%;
     /* background-color: #075e54; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    /* border-left: 1.5px solid #9e9d9d; */
+    padding: 0 20px;
+    margin: 0 20px;
+    border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px 0px;
 }
 
 .wallet .sub-wallet .trans > p{
-    width:50%;
-    margin-top: 30px;
-    font-family: 'Rubik';
+    width: 100%;
+    margin: 30px 0 20px 0;
     font-style: normal;
-    font-weight: 300;
-    font-size: 1.5rem;
-    line-height: 42px;
+    font-weight: 400;
+    font-size: 2rem;
     /* or 280% */
 
     display: flex;
-    align-items: center;
+    align-items: left;
     letter-spacing: -0.5px;
 
     color: #000000;
+}
+
+
+@media screen and (max-width: 770px) {
+    .wallet .sub-wallet{
+        flex-direction: column;
+    }
 }

@@ -1,5 +1,8 @@
 .sidebarContainer{
-
+    position: relative;
+}
+.sidebarContainer .Mnav{
+    display: none;
 }
 .sidebar{
     background-color: #128c7e;
@@ -8,7 +11,7 @@
     /* padding: 0 20px 0 0; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 60px;
     position: sticky;
     top: 0px;
@@ -17,6 +20,7 @@
     display: flex;
     align-items: center;
     padding: 1rem 1rem;
+    margin-bottom: 20px;
 }
 .sidebarLogo{
     font-size: 2.2rem;
@@ -34,12 +38,16 @@
 
 }
 .iconLink{
-  display: grid;
-  place-items: center;
-    padding: .1rem 0rem;
+    display: grid;
+     place-items: self-start;
+    padding: 10px 5px;
     gap: .1rem;
-
-transition: all.5s;}
+    /* background-color: burlywood; */
+    transition: all.5s;
+}
+.iconLink:hover{
+    background-color: #33cab9;
+}
 
 .navIcon, .linkText{
     font-size: 1.5rem;
@@ -65,9 +73,14 @@ font-weight: 200;
 
 .logoutMenu{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
    font-size: 2rem;
    margin-top: .5rem;
+   margin-top: 20px;
+}
+.logoutMenu p{
+    color: #fff;
 }
 .logoutMenu a{
     display: flex;
@@ -80,4 +93,25 @@ font-weight: 200;
     transition: all.5s;
 color: #fff;
 background-color: #128c7e;
+}
+
+
+
+@media screen and (max-width: 1172px) {
+    .sidebar{
+        display: none;
+    }
+    .sidebarContainer{
+        position: fixed;
+        left: 0px;
+        z-index: 3;
+        background-color: #075e54;
+     }
+     .sidebarContainer .Mnav{
+        display: block;
+        padding: 10px 10px;
+    }
+    .sidebarContainer:hover .sidebar{
+        display: flex;
+    }
 }
