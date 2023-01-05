@@ -1,7 +1,7 @@
 import React from 'react'
 import "../@styles/Loader.css";
 
-const Landing = () => {
+const Loader = () => {
   return (
     <div className='landing'>
        
@@ -9,7 +9,6 @@ const Landing = () => {
         <svg viewBox='0 0 1350 600'>
           <text x="50%" y="50%" fill="transparent" textAnchor='middle'>
             Payklas.
-            <span></span>
           </text>
 
         </svg>
@@ -20,4 +19,4 @@ const Landing = () => {
   )
 }
 
-export default Landing
+export default Loader

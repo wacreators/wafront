@@ -15,7 +15,7 @@
 	background-color: #fff;
 	width: 400px;
 	max-width: 90%;
-	height: 55vh;
+	height: 50vh;
 	/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 }
 .arrow-icon {
@@ -32,7 +32,8 @@
 	color: #075e54;
 	font-size: 3.6rem;
 	font-weight: 700;
-
+	stroke-width: 0.5;
+	animation: text 2s linear forwards;
 	letter-spacing: 2px;
 	outline: none;
 }
@@ -42,7 +43,13 @@
 	width: 100%;
 	height: 60vh;
 }
-
+.sign-layout > h3 {
+	font-family: inherit;
+	text-align: center;
+	padding-top: 0.5rem;
+	font-size: 1.8rem;
+	font-weight: 100;
+}
 form {
 	margin: 0.25rem 2rem 0 2rem;
 
@@ -67,16 +74,18 @@ form {
 	flex-direction: column;
 	align-items: center;
 }
-.input-group  >label {
+.input-group label {
 	font-size: 1.4rem;
 	width: 90%;
 	text-align: left;
+	margin: .5rem 0;
 }
 .input-group {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 2rem;
 }
 .input-phone-number {
 	display: flex;
@@ -89,13 +98,13 @@ form {
 	justify-content: center;
 }
 
-.tel-1 >input, .input-group >input {
+input {
 	background-color: transparent;
 	border: none;
 	border-bottom: 2px solid #128c7e;
 	cursor: pointer;
 	width: 90%;
-	padding: 1px 0;
+	padding: 10px 10px;
 }
 /* input:focus::placeholder {
 	padding: 0.5rem 0rem;
@@ -110,7 +119,7 @@ input:focus {
 .input-btn {
 	display: grid;
 	place-items: center;
-	margin: 1rem 0;
+	margin: 2rem 0;
 }
 .submit {
 	margin-top: 1rem;
@@ -181,26 +190,32 @@ input:focus {
 @media screen and  (max-width: 1280px) {
 	.sign-container {
 	
-		height:47vh;
+		height:40vh;
 		/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 	}
 } 
 @media screen and (max-width: 768px ){
 	.sign-container {
 	
-		height:43vh;
+		height:37.5vh;
 		/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 	}
 }
 @media screen and (max-width: 500px) {
 	.sign-container {
-		height: 53.5vh;
+		height: 47.5vh;
 		/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 	}
 }
 @media screen and (max-width: 280px) {
 	.sign-container {
-		height: 65vh;
+		height: 55vh;
 		/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 	}
+    .sign-app >h3 {
+font-size: 2.4rem;
+    }
+   .active{
+    font-size: 1rem;
+   }
 }

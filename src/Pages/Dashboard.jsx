@@ -10,11 +10,12 @@ import {AiOutlineEye} from "react-icons/ai"
 // import { RiWhatsappFill } from 'react-icons/ri'
 import { IoMdSettings } from "react-icons/io"
 import { MdAttachMoney, MdContentCopy, MdShare, MdCircleNotifications, MdDelete } from 'react-icons/md'
+import Heading from "../@components/Heading"
 
 
 
 
-const Dashboard = () => {
+const Dashboard = ({value}) => {
 var user ="Sam Obanla"
 
 
@@ -168,6 +169,7 @@ right:0
     <div className={dashboardStyles.dashboard}>
       <Sidebar/>
       <div className={dashboardStyles.dashboardWrapper}>
+        <Heading value={Dashboard}/>
         <div className={dashboardStyles.dashboardNav}>
           <p>{user.charAt(0)} <span className={dashboardStyles.name}>Samuel</span> </p>
         </div>

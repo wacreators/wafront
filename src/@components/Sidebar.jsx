@@ -12,12 +12,12 @@ const toggle = () => setOpen(!isOpen)
 
     return (
     <div className={sidebarStyles.sidebarContainer}>
-      <HiOutlineMenuAlt4 size={55} className={sidebarStyles.Mnav} />
+      <HiOutlineMenuAlt4 size={40} className={sidebarStyles.Mnav} />
       <div style={{width: isOpen ? "200px" :"60px"}} className={sidebarStyles.sidebar}>
         <div className={sidebarStyles.topSection}>
           <h2 style={{display: isOpen ? "block" :"none"}}  className={sidebarStyles.sidebarLogo}>Payklas</h2>
           <div style={{marginLeft: isOpen ? "60px" :"0", display: isOpen ? "none" :"block"}} className={sidebarStyles.menu}>
-            <HiOutlineMenuAlt4 className={sidebarStyles.icon} size={25} onClick={toggle}/>
+            <h3 className={sidebarStyles.icon}  onClick={toggle}>P</h3>
           </div>
           <div style={{marginLeft: isOpen ? "60px" :"0",display: isOpen ? "block" :"none" }} className={sidebarStyles.menu}>
             <HiX className={sidebarStyles.icon} size={18} onClick={toggle}/>

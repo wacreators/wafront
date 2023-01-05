@@ -5,7 +5,7 @@
     display: none;
 }
 .sidebar{
-    background-color: #128c7e;
+    background-color: #075e54;
     height: 100vh;
     transition: all .5s;
     /* padding: 0 20px 0 0; */
@@ -97,7 +97,7 @@ background-color: #128c7e;
 
 
 
-@media screen and (max-width: 1172px) {
+@media screen and (max-width: 1280px) {
     .sidebar{
         display: none;
     }
@@ -109,7 +109,8 @@ background-color: #128c7e;
      }
      .sidebarContainer .Mnav{
         display: block;
-        padding: 10px 10px;
+        padding: .5rem;
+        color: #fff;
     }
     .sidebarContainer:hover .sidebar{
         display: flex;

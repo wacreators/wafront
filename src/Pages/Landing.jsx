@@ -17,9 +17,9 @@ let timer = useRef(null);
 
 //array of images
 	const sliderData = [
-		{ image: require('../@assests/image-3.png'), message: "",title: "Adding and tracking of members" },
-		{ image: require('../@assests/image.png'), message: "Track your members",title: "Let's help you manage your community and virtual class"},
-		{ image: require('../@assests/image-2.png'), message: "",title: "Let's create an opportunity to get wide base of varied interest" },
+		{ image: require('../@assests/image.png'), message: "Create a commummity.",title: "Let's create a community of wide base of varied interest."},
+		{ image: require('../@assests/image-2.png'), message: "Add new users.",title: "Let's add new members and monitor their activities." },
+		{ image: require('../@assests/image-3.png'), message: "Track your earning.",title: "Let's track your earnings from every community." },
 	];
   const slideLength = sliderData.length;
 useEffect(() => {
@@ -72,8 +72,9 @@ useEffect(() => {
 							<div className={index=== currentSlide ? "slide current" : "slide"} key={index}>
                 {index === currentSlide &&  (
                 <>
-								<img src={slide.image} alt='' />
                 <div className='landing-paragraph'>
+				<img src={slide.image} alt='' />
+
 					<h4>{slide.message}</h4>
 					<p>{slide.title}</p>
 				</div>
@@ -84,9 +85,7 @@ useEffect(() => {
 							</div>
 						);
 					})}
-				</div>
-</div>
-<div className='sm-circle'>
+					<div className='sm-circle'>
           {sliderData.map((slide, index) =>(
             <div key={index} 
 			className={index ===currentSlide ? " sm-circle-dot-active  sm-circle-dot" : "sm-circle-dot"} 
@@ -94,12 +93,17 @@ useEffect(() => {
           )
           }
         </div>
-				<div className='btn'>
+		
+			</div>
+			
+		<div className='btn'>
 					<button onClick={handleRegister}>Get started</button>
 				</div>
-			</div>
+				</div>
+</div>
+
 		 ) : (<Loader/>)
-		
+		 
 	);
 };
 

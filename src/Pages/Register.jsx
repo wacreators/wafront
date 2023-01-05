@@ -35,7 +35,7 @@ const Register = () => {
 		navigate('/');
 	};
 	const handleVerify = () =>{
-		// navigate("/verify")
+		 navigate("/verify")
 	}
 	return (
 		<div className='sign'>
@@ -44,10 +44,9 @@ const Register = () => {
 					<BsArrowLeft color={'#128c7e'} size={20} onClick={handleHome} />
 				</div>
 				<div className='sign-app'>
-					<h1>Welcome</h1>
+					<h3>Welcome</h3>
 				</div>
 				<div className='sign-layout'>
-					{/* <h3>Welcome</h3> */}
 					<form onSubmit={handleLogin}>
 						<div className='form-heading'>
 							<div className='link-title'>
@@ -57,7 +56,7 @@ const Register = () => {
 
 						<div className='input-groups'>
 							<div className='input-group'>
-								<label>Phone</label>
+								<label className='phone-label'>Phone</label>
 								<div className='input-phone-number'>
 									<div className='tel-1'>
 										<input
@@ -81,10 +80,10 @@ const Register = () => {
 							</div>
 
 							<div className='footer'>
-								<p>Already have an account?</p>
-									 <Link to='/signin' className='link'>
+								<p>Already have an account? <Link to='/signin' className='link'>
 										  Sign in
-									</Link>{' '}
+									</Link>{' '}</p>
+									
 								
 							</div>
 						</div>
