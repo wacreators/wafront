@@ -38,15 +38,15 @@ const Register = () => {
 		 navigate("/verify")
 	}
 	return (
-		<div className='sign'>
-			<div className='sign-container'>
+		<div className='register'>
+			<div className='register-container'>
 				<div className='arrow-icon'>
 					<BsArrowLeft color={'#128c7e'} size={20} onClick={handleHome} />
 				</div>
-				<div className='sign-app'>
+				<div className='register-app'>
 					<h3>Welcome</h3>
 				</div>
-				<div className='sign-layout'>
+				<div className='register-layout'>
 					<form onSubmit={handleLogin}>
 						<div className='form-heading'>
 							<div className='link-title'>

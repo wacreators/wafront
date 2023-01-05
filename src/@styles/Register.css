@@ -1,4 +1,4 @@
-.sign {
+.register {
 	width: 100%;
 	height: 100vh;
 	font-family: inherit;
@@ -8,7 +8,7 @@
 	background-color: #ececec;
 }
 
-.sign-container {
+.register-container {
 	display: flex;
 	flex-direction: column;
 	border-radius: 2px;
@@ -21,14 +21,14 @@
 .arrow-icon {
 	padding: 1rem;
 }
-.sign-app {
+.register-app {
 	color: #075e54;
 	width: 100%;
 	margin-bottom: 10px;
 	display: grid;
 	place-items: center;
 }
-.sign-app > h3 {
+.register-app > h3 {
 	color: #075e54;
 	font-size: 3.6rem;
 	font-weight: 700;
@@ -37,7 +37,7 @@
 	outline: none;
 }
 
-.sign-layout {
+.register-layout {
 	border-radius: 6px;
 	width: 100%;
 	height: 60vh;
@@ -179,28 +179,29 @@ input:focus {
 	text-decoration: underline;
 }
 @media screen and  (max-width: 1280px) {
-	.sign-container {
+	.register-container {
 	
-		height:50vh;
+		height:42.5vh;
 		/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 	}
 } 
 @media screen and (max-width: 768px ){
-	.sign-container {
+	.register-container {
 	
-		height:43vh;
+		height:40vh;
 		/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 	}
 }
 @media screen and (max-width: 500px) {
-	.sign-container {
-		height: 53.5vh;
+	.register-container {
+		height: 50.5vh;
 		/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 	}
 }
+
 @media screen and (max-width: 280px) {
-	.sign-container {
-		height: 65vh;
+	.register-container {
+		height: 62.5vh;
 		/* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
 	}
 }
