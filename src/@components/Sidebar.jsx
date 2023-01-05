@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import sidebarStyles from '../@styles/Nav.module.css'
 import {NavData} from "./navData.js"
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { HiOutlineMenuAlt4,HiX, HiOutlineLogout} from "react-icons/hi"
  
@@ -25,10 +25,10 @@ const toggle = () => setOpen(!isOpen)
         </div> 
         {NavData.map((list, index)=>(
           <div  key={index}  className={sidebarStyles.iconLink}>
-            <Link to={list.path}>
+            <NavLink  className={({isActive}) => isActive ? "active-class" : "null"} to={list.path}>
               <h4  className={sidebarStyles.navIcon}>{list.icon}</h4>
               <h4 style={{display: isOpen ? "block" :"none"}} className={sidebarStyles.iconText}>{list.text}</h4>
-                </Link>
+                </NavLink>
           </div>
           )
           )

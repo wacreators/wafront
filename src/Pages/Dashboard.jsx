@@ -169,7 +169,7 @@ right:0
     <div className={dashboardStyles.dashboard}>
       <Sidebar/>
       <div className={dashboardStyles.dashboardWrapper}>
-        <Heading value={Dashboard}/>
+        <Heading name={Dashboard}/>
         <div className={dashboardStyles.dashboardNav}>
           <p>{user.charAt(0)} <span className={dashboardStyles.name}>Samuel</span> </p>
         </div>
