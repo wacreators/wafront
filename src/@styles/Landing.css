@@ -19,14 +19,17 @@
 
 }
 .img-slider{
-    width: 500px;
+   max-width: 500px;
 
 
 
 }
 img{
     max-width: 100%;
+width: 500px;
     height: 300px;
+    object-fit: cover;
+    object-position: bottom;
 
 }
 .slide{
@@ -56,7 +59,6 @@ text-align: center;
 }
 .landing-paragraph> p{
     padding: 1rem ;
-    width:400px;
     font-size: 1.5rem;
     color:#075e54;
     text-align: center;
@@ -119,25 +121,46 @@ button:active{
     color: #fff;
     opacity: .8;
 }
-@media screen and (max-width:380px) {
+@media screen and (max-width:1280px) {
 
     .pattern{
         display: grid;
         place-content: center;
         height: 50vh;
     
-    
-    
+    }
+    img{
+        max-width: 100%;
+    width: 450px;
+        height: 300px;
     
     }
-    .img-slider{
-width: 300px;    
-    
+
+}
+
+@media screen and (max-width:768px) {
+
+    .pattern{
+        display: grid;
+        place-content: center;
+        height: 50vh;
     
     }
     img{
         max-width: 100%;
+    width: 350px;
         height: 300px;
+    
+    }
+
+}
+
+@media screen and (max-width:380px) {
+
+    .pattern{
+        display: grid;
+        place-content: center;
+        height: 50vh;
     
     }
 
@@ -147,17 +170,19 @@ width: 300px;
     .pattern{
         display: grid;
         place-content: center;
-        height: 50vh;
+        height: 40vh;
     
     
     
     
     }
-    .img-slider{
-    }
+    
     img{
-        max-width: 80%;
-        height:auto;
+        max-width: 100%;
+        width: 200px;
+        height: 150px;
+
+
         }    .landing-paragraph h4{
         font-size: 1.6rem;
     }
