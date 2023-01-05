@@ -48,4 +48,10 @@
         stroke: none;
 
     }
-} 
+}
+@media screen and (max-width: 768px ){
+    .logo >svg text{
+        font-size: 9rem;
+    }
+}
+
